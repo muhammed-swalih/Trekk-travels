@@ -18,9 +18,9 @@ function Packages() {
             </div> */}
            
         </div>
-        <div className=' flex inline-flex gap-1 overflow-scroll w-full py-5'>
-            <img className=' w-3/4' src={testImage} alt="" />
-            <img className=' w-3/4' src={testImage} alt="" />
+        <div className=' flex inline-flex gap-1 overflow-scroll  px-5 py-5 snap-none'>
+            <img className='  w-full h-full object-cover rounded-lg' src={testImage} alt="" />
+            <img className='  w-full h-full object-cover rounded-lg' src={testImage} alt="" />
         </div>
     </div>
   )
