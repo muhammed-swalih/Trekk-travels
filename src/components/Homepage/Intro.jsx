@@ -1,6 +1,6 @@
 import React from 'react'
 import globe from '../../TREKK TRAVEL ASSETSS/HOME PAGE/EMOJIS/globe-icon.webp'
-import girl from '../../TREKK TRAVEL ASSETSS/HOME PAGE/IMAGES/tourist-girl.png'
+import girl from '../../TREKK TRAVEL ASSETSS/HOME PAGE/IMAGES/tourist-women.webp'
 function Intro() {
   return (
     <div>

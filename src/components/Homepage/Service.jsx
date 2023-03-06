@@ -10,8 +10,8 @@ function Service() {
             <h1 className=' text-orange-500 uppercase text-[13px] font-bold'>what we serve</h1>
         </div>
         <div className='text-center w-full '>
-            <h1 className=' text-center mx-auto font-bold  text-xl'>Top Values</h1> 
-            <h1 className=' text-center mx-auto font-bold flex inline-flex text-xl'>For You <span><img src={fire} alt="" width={25}/></span></h1> 
+            <h1 className=' text-center mx-auto font-bold  text-2xl'>Top Values</h1> 
+            <h1 className=' text-center mx-auto font-bold flex inline-flex text-2xl'>For You <span><img className=' mt-1' src={fire} alt="" width={25}/></span></h1> 
             <h1 className='text-xs text-gray-700'>Try a verity of benefits  when using our services.</h1> 
         </div>
         <div className=' w-full py-5 px-5 '>
