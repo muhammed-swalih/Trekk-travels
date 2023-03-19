@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Intro from '../components/Homepage/Intro'
 import Navbar from '../components/Homepage/Navbar'
 import TopDestination from '../components/Homepage/TopDestination'
@@ -10,6 +10,9 @@ import Ads from '../components/Homepage/Ads'
 import Footer from '../components/Homepage/Footer'
 
 function Home() {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   return (
     <div>
         <Navbar/>
