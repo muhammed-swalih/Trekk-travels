@@ -20,7 +20,7 @@ function MalappuramResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('/packages/malappuram');
+        const response = await axios.get('https://trekkandtravel.onrender.com/packages/malappuram');
         setResort(response.data)
         console.log(response.data);
     }

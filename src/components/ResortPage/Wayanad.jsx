@@ -20,7 +20,7 @@ function WayanadResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('/packages/wayanad');
+        const response = await axios.get('https://trekkandtravel.onrender.com/packages/wayanad');
         setResort(response.data)
         console.log(response.data);
     }

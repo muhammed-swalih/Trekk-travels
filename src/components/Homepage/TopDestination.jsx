@@ -12,7 +12,7 @@ function TopDestination() {
     const navigate = useNavigate()
     const [image, setImage] = useState([])
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('/packages/holiday');
+        const response = await axios.get('https://trekkandtravel.onrender.com/packages/holiday');
         setImage(response.data)
         console.log(response.data);
     }

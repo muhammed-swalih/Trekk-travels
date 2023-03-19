@@ -148,7 +148,7 @@ function Navbar() {
             <hr />
             <li className=' my-5' onClick={holidayNavigation}>Holiday Package</li>
             <hr />
-            <li className=' my-5'>Resort</li>
+            <li  className=' my-5' onClick={resortNavigation}>Resort</li>
             <hr />
             <li className=' my-5' onClick={aboutUsNavigation}>About us</li>
             <hr />

@@ -20,7 +20,7 @@ function OotyResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('/packages/ooty');
+        const response = await axios.get('https://trekkandtravel.onrender.com/packages/ooty');
         setResort(response.data)
         console.log(response.data);
     }

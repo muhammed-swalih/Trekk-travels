@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import ad from '../../TREKK TRAVEL ASSETSS/HOME PAGE/IMAGES/ad.webp'
+import { FaWhatsapp } from 'react-icons/fa';
 import customers from '../../TREKK TRAVEL ASSETSS/HOME PAGE/IMAGES/customers.webp'
 import staring from '../../TREKK TRAVEL ASSETSS/HOME PAGE/EMOJIS/star.webp'
 import star from '../../TREKK TRAVEL ASSETSS/HOME PAGE/EMOJIS/star-eye-emoji-icons.webp'
@@ -9,7 +10,7 @@ function Ads() {
     const isMediumScreen = useMediaQuery("(min-width : 640px)")
     const [image, setImage] = useState([])
     const fetchAds = async () => {
-        const response = await axios.get('/packages/getAd');
+        const response = await axios.get('https://trekkandtravel.onrender.com/packages/getAd');
         setImage(response.data)
     }
     useEffect(() => {
@@ -18,6 +19,11 @@ function Ads() {
     if (isMediumScreen) {
         return (
             <div className=' w-full h-auto py-10 bg-[#EBEBEB]'>
+                <div className="fixed bottom-[200px] w-[200px] h-[200px] rounded-full right-[100px] bg-green-500">
+                    <a href="https://wa.me/9947172630" target="_blank">
+                        <FaWhatsapp className="text-[130px] mx-auto mt-9  text-white hover:text-green-600" />
+                    </a>
+                </div>
                 {image.map((items) => {
                     const base64String = btoa(
                         String.fromCharCode(...new Uint32Array((items.image.data.data)))
@@ -53,6 +59,11 @@ function Ads() {
     }
     return (
         <div className=' py-5 bg-[#EBEBEB] px-5'>
+                <div className="fixed bottom-10 right-5 bg-green-500 w-[60px] h-[60px] rounded-full  ">
+                    <a href="https://wa.me/9947172630" target="_blank">
+                        <FaWhatsapp className="text-4xl text-white mx-auto mt-3 hover:text-green-600" />
+                    </a>
+                </div>
             {image.map((items) => {
                 const base64String = btoa(
                     String.fromCharCode(...new Uint32Array((items.image.data.data)))

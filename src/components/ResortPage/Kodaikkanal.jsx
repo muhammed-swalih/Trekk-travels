@@ -20,7 +20,7 @@ function KodaikkanalResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('/packages/kodaikkanal');
+        const response = await axios.get('https://trekkandtravel.onrender.com/packages/kodaikkanal');
         setResort(response.data)
         console.log(response.data);
     }

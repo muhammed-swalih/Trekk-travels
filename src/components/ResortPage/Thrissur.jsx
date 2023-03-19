@@ -20,7 +20,7 @@ function ThrissurResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('/packages/thrissur');
+        const response = await axios.get('https://trekkandtravel.onrender.com/packages/thrissur');
         setResort(response.data)
         console.log(response.data);
     }

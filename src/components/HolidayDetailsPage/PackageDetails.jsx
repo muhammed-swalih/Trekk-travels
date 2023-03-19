@@ -12,7 +12,7 @@ function PackageDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`/packages/getholiday/${id}`)
+        axios(`https://trekkandtravel.onrender.com/packages/getholiday/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(
@@ -46,7 +46,7 @@ function PackageDetails() {
                         <h1 className=' text-[75px] '>{details ? details.days : "no of days"}</h1>
                         <button className=' uppercase w-auto px-[10px] font-semibold rounded-3xl text-[65px] border border-[10px] px-[50px] border-orange-500 flex inline-flex'><span className=' text-[85px]'><BiRupee /></span>{details ? details.price : "price"}</button>
                         <div className=' text-[80px] w-full h-auto bg-orange-500 text-center  text-white uppercase rounded-3xl py-4'>
-                            <h1>get a quote</h1>
+                            <a href="https://wa.me/9947172630"><h1>get a quote</h1></a>
                         </div>
                     </div>
                 </div>
@@ -86,20 +86,22 @@ function PackageDetails() {
                             <button className=' border border-2  border-orange-500 px-5 py-1 rounded-lg font-semibold uppercase flex inline-flex'><span className=' text-xl'><BiRupee /></span>{details ? details.price : "price"}</button>
                         </div>
                         <div className=' mt-4 w-full rounded-lg h-auto text-center bg-orange-500'>
-                            <h1 className=' uppercase text-white py-1 '>get a quote</h1>
+                            <a href="https://wa.me/9947172630" target="_blank"><h1 className=' uppercase text-white py-1 '>get a quote </h1></a>
                         </div>
                         <div className=' w-full h-auto mt-4 bg-[#D9D9D9] px-10 py-3 rounded-xl border border-1 border-gray-400'>
                             <h1 className=' text-lg'>highlights</h1>
                             <ul className=' list-disc text-sm'>
-                                <li>Leisure time</li>
-                                <li>Relaxing holiday</li>
+                                {details && details.highlight1 && <li>{details ? details.highlight1 : "nothing"}</li>}
+                                {details && details.highlight2 && <li>{details ? details.highlight2 : "nothing"}</li>}
+                                {details && details.highlight3 && <li>{details ? details.highlight3 : "nothing"}</li>}
+                                {details && details.highlight4 && <li>{details ? details.highlight4 : "nothing"}</li>}
+                                {details && details.highlight5 && <li>{details ? details.highlight5 : "nothing"}</li>}
+                                {details && details.highlight6 && <li>{details ? details.highlight6 : "nothing"}</li>}
                             </ul>
                         </div>
                         <div className=' w-full px-5 py-5 bg-[#D9D9D9] mt-5 border border-1 border-gray-400 rounded-xl'>
                             <h1 className=' text-sm'>
-                                Trip Location: Male, MaldivesStart Point: Male AirportEnd Point: Male AirportThings To Do: Enjoy diving, excursion, water sports, romantic dining
-                                About Paradise Island Resort & Spa, Maldives:
-                                Paradise Island Resort & Spa is nestled on the secluded island of Lankanfinolhu in Maldives. If you desire to have a perfect tropical honeymoon at a secluded island featuring impeccable beaches with lagoon awash in deep ocean and vibrant marine life then this property is an ideal place to plan your honeymoon. This is one of the luxurious resorts in Maldives and is known to be a romantic escapade to plan your honeymoon. The property offers a wide selection of accommodations with exotic setup and having direct access to the beach or private hot tubs.
+                            {details ? details.description : "description"}
 
                             </h1>
                         </div>

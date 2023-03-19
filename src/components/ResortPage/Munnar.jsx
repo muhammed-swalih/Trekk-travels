@@ -20,7 +20,7 @@ function MunnarResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('/packages/munnar');
+        const response = await axios.get('https://trekkandtravel.onrender.com/packages/munnar');
         setResort(response.data)
         console.log(response.data);
     }

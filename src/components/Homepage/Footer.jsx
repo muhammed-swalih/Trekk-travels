@@ -17,13 +17,13 @@ function Footer() {
                             <h1 className=' my-auto text-[35px] mb-[95px] ml-[-190px]'>HOLIDAYS</h1>
                         </div>
                         <div className='bg-orange-500 w-auto h-auto py-[15px] px-[5px] rounded-[80px]'>
-                            <h1 className='flex justify-center gap-5 text-[65px] mt-[5px] text-white text-center'><span className=' text-[85px]'><BsTelephoneFill/></span>+91 00000000000</h1>
+                            <h1 className='flex justify-center gap-5 text-[65px] mt-[5px] text-white text-center'><span className=' text-[85px]'><BsTelephoneFill/></span>+91 9947172630</h1>
                         </div>
                         <div className=' flex flex-col gap-[50px]'>
                             <div className=' text-orange-500 flex inline-flex text-[60px] font-semibold '><span className=' text-[85px]'><IoLocationSharp/></span>Headquarters</div>
                         </div>
                         <div className=''>
-                            <h1 className=' text-[65px] w-[850px] text-gray-600 font-semibold'>lorem ispun  palla swalih 1st build chelakkadu</h1>
+                            <h1 className=' text-[65px] w-[850px] text-gray-600 font-semibold'>lorem ipsun is a writing 1st build chelakkadu</h1>
                         </div>
                         <div className='pb-10 flex justify-between w-4/5  gap-5'>
                             <FaWhatsapp className='  w-28 bg-gray-800 text-white px-5 py-5 rounded-full  h-28'/>
@@ -48,7 +48,7 @@ function Footer() {
             </div>
             <div className=' flex flex-col items-start ml-10 gap-5'>
                 <div className=' w-auto px-2 rounded-xl bg-orange-500'>
-                    <h1 className=' text-md mt-2 text-white flex inline-flex gap-2 '><span className=' mt-1'><BsTelephoneFill/></span>+91 000000000000</h1>
+                    <h1 className=' text-md mt-2 text-white flex inline-flex gap-2 '><span className=' mt-1'><BsTelephoneFill/></span>+91 9947172630</h1>
                 </div>
                 <div className=''>
                     <div className=' flex inline-flex gap-2'><span className=' text-2xl'><IoLocationSharp/></span><h1 className=' text-md font-semibold text-orange-500'>Headquarters</h1></div>

@@ -14,7 +14,7 @@ function KannurDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`/packages/getKannur/${id}`)
+        axios(`https://trekkandtravel.onrender.com/packages/getKannur/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(
@@ -50,7 +50,7 @@ function KannurDetails() {
                             <h1 className=' text-[150px] '>{details ? details.place : "place name"}</h1>
 
                             <div className=' text-[80px] w-full h-auto bg-orange-500 text-center  text-white uppercase rounded-3xl py-4'>
-                                <h1>get a quote</h1>
+                            <a href="https://wa.me/9947172630"><h1>get a quote</h1></a>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ function KannurDetails() {
                             <h1 className=' text-2xl font-medium '>{details ? details.place : "place name"}</h1>
                         </div>
                         <div className=' mt-4 w-full rounded-lg h-auto text-center bg-orange-500'>
-                            <h1 className=' uppercase text-white py-1 '>get a quote</h1>
+                        <a href="https://wa.me/9947172630"><h1 className=' uppercase text-white py-1 '>get a quote</h1></a>
                         </div>
                         <div className=' w-full px-5 py-5 bg-[#D9D9D9] mt-5 border border-1 border-gray-400 rounded-xl'>
                             <h1 className=' text-sm'>

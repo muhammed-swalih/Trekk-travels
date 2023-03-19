@@ -29,20 +29,23 @@ function Navbar() {
   const homeNavigation = () => {
     navigate('/')
   }
+  const resortNavigation = () => {
+    navigate('/resorts')
+  }
   const [menu, setMenu] = useState(false)
   const toggle = () => {
     setMenu(!menu)
   }
   if (isMediumScreen) {
     return (
-      <div className=' w-full h-auto bg-contain' style={{ backgroundImage: `url(${pcBg})` }}>
+      <div className=' w-full min-h-screen h-auto bg-contain' style={{ backgroundImage: `url(${pcBg})` }}>
         <div className=' w-3/4 h-80 flex justify-between pl-[350px]'>
           <div className=' font-semibold text-[60px] my-auto'>Trekk & Travel</div>
           <div className=' flex justify-evenly text-[45px] my-auto w-3/4'>
-            <h1 className=' flex gap-5'>Honeymoon Package <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
-            <h1 className=' flex gap-5'>Family Package <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
-            <h1 className=' flex gap-5'>Holiday Package <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
-            <h1 className=' flex gap-5'>Resort <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
+            <h1 onClick={honeymoonNavigation} className=' flex gap-5'>Honeymoon Package <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
+            <h1 onClick={familyNavigation} className=' flex gap-5'>Family Package <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
+            <h1 onClick={holidayNavigation} className=' flex gap-5'>Holiday Package <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
+            <h1 onClick={resortNavigation} className=' flex gap-5'>Resort <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
           </div>
         </div>
         <div className=' px-20 my-auto w-full h-screen flex justify-between'>
@@ -82,7 +85,7 @@ function Navbar() {
               <hr />
               <li className=' my-5' onClick={holidayNavigation}>Holiday Package</li>
               <hr />
-              <li className=' my-5'>Resort</li>
+              <li onClick={resortNavigation} className=' my-5'>Resort</li>
               <hr />
               <li className=' my-5' onClick={aboutUsNavigation}>About us</li>
               <hr />

@@ -11,7 +11,7 @@ function PackageList() {
     const isMediumScreen = useMediaQuery("(min-width : 640px)")
     const [image, setImage] = useState([])
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('/packages/honeymoon');
+        const response = await axios.get('https://trekkandtravel.onrender.com/packages/honeymoon');
         setImage(response.data)
         console.log(response.data);
     }

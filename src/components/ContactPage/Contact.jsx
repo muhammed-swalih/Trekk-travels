@@ -25,6 +25,9 @@ function Contact() {
   const contactNavigation = () => {
     navigate('/contact')
   }
+  const resortNavigation = () => {
+    navigate('/resorts')
+  }
   const homeNavigation = () => {
     navigate('/')
   }
@@ -45,7 +48,7 @@ function Contact() {
             <h1 onClick={honeymoonNavigation} className=' text-[55px] flex gap-5 '>Honeymoon Package</h1>
             <h1 onClick={familyNavigation} className=' text-[55px] flex gap-5 '>Family Package </h1>
             <h1 onClick={holidayNavigation} className=' text-[55px] flex gap-5 '>Holiday Package</h1>
-            <h1 className=' text-[55px] flex gap-5 '>Resort </h1>
+            <h1 onClick={resortNavigation} className=' text-[55px] flex gap-5 '>Resort </h1>
           </div>
         </div>
         <div className=' w-4/5 h-auto my-auto flex justify-between mx-auto py-36'>
@@ -95,7 +98,7 @@ function Contact() {
               <hr />
               <li className=' my-5' onClick={holidayNavigation}>Holiday Package</li>
               <hr />
-              <li className=' my-5'>Resort</li>
+              <li className=' my-5' onClick={resortNavigation}>Resort</li>
               <hr />
               <li className=' my-5' onClick={aboutUsNavigation}>About us</li>
               <hr />
