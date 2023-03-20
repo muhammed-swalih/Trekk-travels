@@ -92,6 +92,7 @@ function PackageDetails() {
                             <h1 className=' text-lg'>highlights</h1>
                             <ul className=' list-disc text-sm'>
                                 {details && details.highlight1 && <li>{details ? details.highlight1 : "nothing"}</li>}
+                                
                                 {details && details.highlight2 && <li>{details ? details.highlight2 : "nothing"}</li>}
                                 {details && details.highlight3 && <li>{details ? details.highlight3 : "nothing"}</li>}
                                 {details && details.highlight4 && <li>{details ? details.highlight4 : "nothing"}</li>}

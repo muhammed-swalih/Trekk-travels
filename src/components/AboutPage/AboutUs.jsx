@@ -41,11 +41,12 @@ function Navbar() {
       <div className=' w-full min-h-screen h-auto bg-contain' style={{ backgroundImage: `url(${pcBg})` }}>
         <div className=' w-3/4 h-80 flex justify-between pl-[350px]'>
           <div className=' font-semibold text-[60px] my-auto'>Trekk & Travel</div>
-          <div className=' flex justify-evenly text-[45px] my-auto w-3/4'>
-            <h1 onClick={honeymoonNavigation} className=' flex gap-5'>Honeymoon Package <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
-            <h1 onClick={familyNavigation} className=' flex gap-5'>Family Package <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
-            <h1 onClick={holidayNavigation} className=' flex gap-5'>Holiday Package <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
-            <h1 onClick={resortNavigation} className=' flex gap-5'>Resort <span><FaAngleDown className=' h-16 text-orange-500' /></span></h1>
+          <div className=' flex justify-evenly text-[50px] my-auto w-3/4'>
+            <h1 onClick={homeNavigation} className=' flex gap-5 hover:underline hover:text-blue-800'>Home </h1>
+            <h1 onClick={honeymoonNavigation} className=' flex gap-5 hover:underline hover:text-blue-800'>Honeymoon Package </h1>
+            <h1 onClick={familyNavigation} className=' flex gap-5 hover:underline hover:text-blue-800'>Family Package </h1>
+            <h1 onClick={holidayNavigation} className=' flex gap-5 hover:underline hover:text-blue-800'>Holiday Package </h1>
+            <h1 onClick={resortNavigation} className=' flex gap-5 hover:underline hover:text-blue-800'>Resort </h1>
           </div>
         </div>
         <div className=' px-20 my-auto w-full h-screen flex justify-between'>

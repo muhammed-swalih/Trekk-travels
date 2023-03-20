@@ -102,23 +102,26 @@ function Navbar() {
             <h1 className=' uppercase my-auto text-[40px] mt-[215px] ml-[-190px]'>holidays</h1>
           </div>
           <div className=' md:flex inline-flex gap-40 '>
-            <div className=' md:text-[55px] my-auto font-medium '>
+            <div className=' md:text-[50px] my-auto font-medium '>
               <h1 onClick={homeNavigation}  className=' flex gap-5 hover:text-blue-900 hover:underline '>Home </h1>
             </div>
-            <div className=' md:text-[55px] my-auto font-medium'>
+            <div className=' md:text-[50px] my-auto font-medium'>
               <h1 onClick={honeymoonNavigation}  className=' flex gap-5 hover:text-blue-900 hover:underline'>Honeymoon Packages </h1>
             </div>
-            <div className=' md:text-[55px] my-auto font-medium'>
+            <div className=' md:text-[50px] my-auto font-medium'>
               <h1 onClick={familyNavigation} className=' flex gap-5 hover:text-blue-900 hover:underline'>Family Packages </h1>
             </div>
-            <div className=' md:text-[55px] my-auto font-medium'>
+            <div className=' md:text-[50px] my-auto font-medium'>
               <h1 onClick={holidayNavigation} className=' flex gap-5 hover:text-blue-900 hover:underline'>Holiday Packages</h1>
             </div>
-            <div className=' md:text-[55px] my-auto font-medium'>
+            <div className=' md:text-[50px] my-auto font-medium'>
               <h1 onClick={resortNavigation} className=' flex gap-5 hover:text-blue-900 hover:underline'>Resorts </h1>
             </div>
-            <div className=' md:text-[55px] my-auto font-medium'>
+            <div className=' md:text-[50px] my-auto font-medium'>
               <h1 onClick={contactNavigation}  className='flex gap-5 hover:text-blue-900 hover:underline'>Contact</h1>
+            </div>
+            <div className=' md:text-[50px] my-auto font-medium'>
+              <h1 onClick={aboutUsNavigation}  className='flex gap-5 hover:text-blue-900 hover:underline'>About</h1>
             </div>
           </div>
 

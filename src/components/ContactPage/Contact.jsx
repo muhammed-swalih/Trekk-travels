@@ -44,11 +44,11 @@ function Contact() {
             <h1 className=' text-[70px] font-semibold my-auto'>Trekk & travel</h1>
           </div>
           <div className=' flex justify-between w-4/6 my-auto '>
-            <h1 onClick={homeNavigation} className=' text-[55px] flex gap-5 '>Home</h1>
-            <h1 onClick={honeymoonNavigation} className=' text-[55px] flex gap-5 '>Honeymoon Package</h1>
-            <h1 onClick={familyNavigation} className=' text-[55px] flex gap-5 '>Family Package </h1>
-            <h1 onClick={holidayNavigation} className=' text-[55px] flex gap-5 '>Holiday Package</h1>
-            <h1 onClick={resortNavigation} className=' text-[55px] flex gap-5 '>Resort </h1>
+            <h1 onClick={homeNavigation} className=' text-[50px] flex gap-5 hover:underline hover:text-blue-800 '>Home</h1>
+            <h1 onClick={honeymoonNavigation} className=' text-[50px] flex gap-5 hover:underline hover:text-blue-800 '>Honeymoon Package</h1>
+            <h1 onClick={familyNavigation} className=' text-[50px] flex gap-5 hover:underline hover:text-blue-800 '>Family Package </h1>
+            <h1 onClick={holidayNavigation} className=' text-[50px] flex gap-5 hover:underline hover:text-blue-800 '>Holiday Package</h1>
+            <h1 onClick={resortNavigation} className=' text-[50px] flex gap-5 hover:underline hover:text-blue-800 '>Resort </h1>
           </div>
         </div>
         <div className=' w-4/5 h-auto my-auto flex justify-between mx-auto py-36'>
@@ -76,7 +76,7 @@ function Contact() {
     )
   }
   return (
-    <div className=' w-full h-auto bg-[#E7E7E7]'>
+    <div className=' w-full min-h-screen h-auto bg-[#E7E7E7]'>
 
       <div className=' w-full  h-28 flex inline-flex justify-between pr-5 md:h-96 font-sans'>
 

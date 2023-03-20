@@ -25,7 +25,7 @@ function PackageList() {
 
     if (isMediumScreen) {
         return (
-            <div className=' w-full h-auto bg-[#EBEBEB] pt-[450px] pb-[50px] '>
+            <div className=' w-full min-h-screen h-auto bg-[#EBEBEB] pt-[450px] pb-[50px] '>
 
                 <div className=' w-full h-auto text-center'>
                     <img className=' mx-auto' src={holidayPaper} alt="" width={3200} />
