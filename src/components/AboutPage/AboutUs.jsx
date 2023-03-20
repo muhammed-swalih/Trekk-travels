@@ -53,19 +53,30 @@ function Navbar() {
           <div className=' my-auto h-auto w-2/5 '>
             <img className=' w-full h-full object-cover' src={pageTar} alt="" />
           </div>
-          <div className='w-2/5 h-auto  my-auto bg-[#F7F7F7] py-24 px-24 rounded-[80px] mr-[900px]'>
+          <div className='w-2/5 h-auto  my-auto bg-[#F7F7F7] font-medium py-24 px-24 rounded-[80px] mr-[900px]'>
             <h1 className=' text-[55px] w-4/4'>
-              About Tripadvisor
-              Tripadvisor, the world's largest travel platform*, helps 463 million travelers each month** make every trip their best trip. Travelers across the globe use the Tripadvisor site and app to browse more than 859 million reviews and opinions of 8.6 million accommodations, restaurants, experiences, airlines and cruises. Whether planning or on a trip, travelers turn to Tripadvisor to compare low prices on hotels, flights and cruises, book popular tours and attractions, as well as reserve tables at great restaurants. Tripadvisor, the ultimate travel companion, is available in 49 markets and 28 languages.
-              The subsidiaries and affiliates of Tripadvisor, Inc. (NASDAQ:TRIP) own and operate a portfolio of websites and businesses, including the following travel media brands:
+              Trekk & travel holidays is a professional team of passionate travel professionals. specializes in designing top end, budget oriented, travel products focusing on Cultural & Heritage, Adventure, Wildlife, Yoga & Ayurveda and Wellness, Beaches, Trains and Cruises, Incentive Weddings and Medical Tourism.
+              We create personalised travel itineraries and offer the hassle-free holiday experience based on the guest's interests and requirements and choices. Ranging from luxury, heritage, and cultural holidays; adventure treks, cycling tours; incentive groups, events, Trekk & travel holidays is a one stop for all travel and holidaying needs.
             </h1>
+            <div className=' text-[55px] mt-[50px] ml-[50px] '>
+              <ul className=' list-disc'>
+                <li>Highest Operating Standards</li>
+                <li>Friendly & well-informed Staff</li>
+                <li>Travel itinerary consultations</li>
+                <li>Tailor made holiday packages</li>
+                <li>Private Tours for individuals and groups</li>
+                <li>Competent in organising and bookings</li>
+                <li>Save time and effort</li>
+                <li>Well Recognised Tour Operator</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     )
   }
   return (
-    <div className=' w-full h-screen bg-cover' style={{ backgroundImage: `url(${background})` }}>
+    <div className=' w-full min-h-screen h-auto bg-cover pb-10' style={{ backgroundImage: `url(${background})` }}>
       <div className=' w-full  h-28 flex inline-flex justify-between pr-5 md:h-96 font-sans'>
 
         <div className=' flex inline-flex  '>
@@ -105,12 +116,23 @@ function Navbar() {
       </div>
       <div className=' px-5'>
 
-        <div className=' w-full mx-auto px-5 py-5 rounded-2xl bg-[#F7F7F7] h-auto mt-10'>
-          <h1 className=' text-xs font-semibold '>
-            About Tripadvisor
-            Tripadvisor, the world's largest travel platform*, helps 463 million travelers each month** make every trip their best trip. Travelers across the globe use the Tripadvisor site and app to browse more than 859 million reviews and opinions of 8.6 million accommodations, restaurants, experiences, airlines and cruises. Whether planning or on a trip, travelers turn to Tripadvisor to compare low prices on hotels, flights and cruises, book popular tours and attractions, as well as reserve tables at great restaurants. Tripadvisor, the ultimate travel companion, is available in 49 markets and 28 languages.
-            The subsidiaries and affiliates of Tripadvisor, Inc. (NASDAQ:TRIP) own and operate a portfolio of websites and businesses, including the following travel media brands:
+        <div className=' text-md w-full mx-auto px-5 py-5 font-medium  rounded-2xl bg-[#F7F7F7] h-auto mt-10'>
+          <h1 className='   '>
+            Trekk & travel holidays is a professional team of passionate travel professionals. specializes in designing top end, budget oriented, travel products focusing on Cultural & Heritage, Adventure, Wildlife, Yoga & Ayurveda and Wellness, Beaches, Trains and Cruises, Incentive Weddings and Medical Tourism.
+            We create personalised travel itineraries and offer the hassle-free holiday experience based on the guest's interests and requirements and choices. Ranging from luxury, heritage, and cultural holidays; adventure treks, cycling tours; incentive groups, events, Trekk & travel holidays is a one stop for all travel and holidaying needs.
           </h1>
+          <div className=' mt-5 ml-5'>
+            <ul className=' list-disc '>
+              <li className=' my-3'>Highest Operating Standards</li>
+              <li className=' my-3'>Friendly & well-informed Staff</li>
+              <li className=' my-3'>Travel itinerary consultations</li>
+              <li className=' my-3'>Tailor made holiday packages</li>
+              <li className=' my-3'>Private Tours for individuals and groups</li>
+              <li className=' my-3'>Competent in organising and bookings</li>
+              <li className=' my-3'>Save time and effort</li>
+              <li className=' my-3'>Well Recognised Tour Operator</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
