@@ -18,29 +18,29 @@ import TrivandrumResorts from '../components/ResortPage/TrivandrumResorts'
 import Vagamon from '../components/ResortPage/Vagamon'
 import Wayanad from '../components/ResortPage/Wayanad'
 function Resorts() {
-  useEffect(()=>{
-    window.scrollTo(0,0);
-  },[])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div>
-        <Navbar/>
-        <TrivandrumResorts/>
-        <Kumarakom/>
-        <Alleppey/>
-        <Munnar/>
-        <Vagamon/>
-        <Thekkady/>
-        <Kochi/>
-        <Wayanad/>
-        <Calicut/>
-        <Thrissur/>
-        <Malappuram/>
-        <Kannur/>
-        <Kasargod/>
-        <Coorg/>
-        <Kodaikkanal/>
-        <Ooty/>
-        <Footer/>
+      <Navbar />
+      <TrivandrumResorts />
+      <Kumarakom />
+      <Alleppey />
+      <Munnar />
+      <Vagamon />
+      <Thekkady />
+      <Kochi />
+      <Wayanad />
+      <Calicut />
+      <Thrissur />
+      <Malappuram />
+      <Kannur />
+      <Kasargod />
+      <Coorg />
+      <Kodaikkanal />
+      <Ooty />
+      <Footer />
     </div>
   )
 }
