@@ -52,7 +52,7 @@ function BestHoneymoon() {
                                     <h1 className=' absolute top-36 text-white text-3xl font-light left-3 '>{items ? items.place : "nothing"}</h1>
                                     <h1 className=' absolute top-[185px] text-white text-sm  font-light left-3 '>{items ? items.days : "nothing"}</h1>
                                     <h1 className=' absolute top-[210px] text-white text-xs  font-light left-3 flex'><span className=' '><BiRupee/></span>{items ? items.price : "nothing"}</h1>
-                                    <button onClick={naviageHoneymoonDetails} className='absolute top-[190px] text-white border  py-1 border-1 border-white px-2 rounded right-3'>View Deal</button>
+                                    <button onClick={()=>naviageHoneymoonDetails(items._id)} className='absolute top-[190px] text-white border  py-1 border-1 border-white px-2 rounded right-3'>View Deal</button>
                                 </div>
                             )
                         })}

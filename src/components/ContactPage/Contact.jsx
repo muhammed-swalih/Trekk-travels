@@ -12,22 +12,22 @@ function Contact() {
   const isMediumScreen = useMediaQuery("(min-width : 640px)")
   const navigate = useNavigate()
   const honeymoonNavigation = () => {
-    navigate('/honeymoonpackage')
+    navigate('/https://trekkandtravel.onrender.com/honeymoonpackage')
   }
   const familyNavigation = () => {
-    navigate('/familypackage')
+    navigate('/https://trekkandtravel.onrender.com/familypackage')
   }
   const holidayNavigation = () => {
-    navigate('/holidaypackage')
+    navigate('/https://trekkandtravel.onrender.com/holidaypackage')
   }
   const aboutUsNavigation = () => {
-    navigate('/about')
+    navigate('/https://trekkandtravel.onrender.com/about')
   }
   const contactNavigation = () => {
-    navigate('/contact')
+    navigate('/https://trekkandtravel.onrender.com/contact')
   }
   const resortNavigation = () => {
-    navigate('/resorts')
+    navigate('/https://trekkandtravel.onrender.com/resorts')
   }
   const homeNavigation = () => {
     navigate('/')

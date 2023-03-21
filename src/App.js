@@ -32,34 +32,34 @@ function App() {
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/honeymoonpackage" element={<Honeymoon />} />
-        <Route exact path="/familypackage" element={<Family />} />
-        <Route exact path="/holidaypackage" element={<Holiday />} />
-        <Route exact path="/honeymoondetails/:id" element={<HoneymoonDetails/>} />
-        <Route exact path="/familydetails/:id" element={<FamilyDetails/>} />
-        <Route exact path="/holidaydetails/:id" element={<HolidayDetails/>} />
-        <Route exact path="/resorts" element={<Resorts/>} />
+        <Route  path="/about" element={<About />} />
+        <Route  path="/contact" element={<Contact />} />
+        <Route  path="/honeymoonpackage" element={<Honeymoon />} />
+        <Route  path="/familypackage" element={<Family />} />
+        <Route  path="/holidaypackage" element={<Holiday />} />
+        <Route  path="/honeymoondetails/:id" element={<HoneymoonDetails/>} />
+        <Route  path="/familydetails/:id" element={<FamilyDetails/>} />
+        <Route  path="/holidaydetails/:id" element={<HolidayDetails/>} />
+        <Route  path="/resorts" element={<Resorts/>} />
         
         //resorts routes
 
-        <Route exact path="/trivandrumresort/:id" element={<TrivandrumDetails/>} />
-        <Route exact path="/kumarakomresort/:id" element={<KumarakomDetails/>} />
-        <Route exact path="/alleppeyresort/:id" element={<AlleppeyDetails/>} />
-        <Route exact path="/munnarresort/:id" element={<MunnarDetails/>} />
-        <Route exact path="/vagamonresort/:id" element={<VagamonDetails/>} />
-        <Route exact path="/thekkadyresort/:id" element={<ThekkadyDetails/>} />
-        <Route exact path="/kochiresort/:id" element={<KochiDetails/>} />
-        <Route exact path="/wayanadresort/:id" element={<WayanadDetails/>} />
-        <Route exact path="/calicutresort/:id" element={<CalicutDetails/>} />
-        <Route exact path="/thrissurresort/:id" element={<ThrissurDetails/>} />
-        <Route exact path="/malappuramresort/:id" element={<MalappuramDetails/>} />
-        <Route exact path="/kannurresort/:id" element={<KannurDetails/>} />
-        <Route exact path="/kasargodresort/:id" element={<KasargodDetails/>} />
-        <Route exact path="/coorgresort/:id" element={<CoorgDetails/>} />
-        <Route exact path="/kodaikkanalresort/:id" element={<KodaikkanalDetails/>} />
-        <Route exact path="/ootyresort/:id" element={<OotyDetails/>} />
+        <Route  path="/trivandrumresort/:id" element={<TrivandrumDetails/>} />
+        <Route  path="/kumarakomresort/:id" element={<KumarakomDetails/>} />
+        <Route  path="/alleppeyresort/:id" element={<AlleppeyDetails/>} />
+        <Route  path="/munnarresort/:id" element={<MunnarDetails/>} />
+        <Route  path="/vagamonresort/:id" element={<VagamonDetails/>} />
+        <Route  path="/thekkadyresort/:id" element={<ThekkadyDetails/>} />
+        <Route  path="/kochiresort/:id" element={<KochiDetails/>} />
+        <Route  path="/wayanadresort/:id" element={<WayanadDetails/>} />
+        <Route  path="/calicutresort/:id" element={<CalicutDetails/>} />
+        <Route  path="/thrissurresort/:id" element={<ThrissurDetails/>} />
+        <Route  path="/malappuramresort/:id" element={<MalappuramDetails/>} />
+        <Route  path="/kannurresort/:id" element={<KannurDetails/>} />
+        <Route  path="/kasargodresort/:id" element={<KasargodDetails/>} />
+        <Route  path="/coorgresort/:id" element={<CoorgDetails/>} />
+        <Route  path="/kodaikkanalresort/:id" element={<KodaikkanalDetails/>} />
+        <Route  path="/ootyresort/:id" element={<OotyDetails/>} />
 
       </Routes>
 
