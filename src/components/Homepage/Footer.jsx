@@ -8,36 +8,29 @@ function Footer() {
     const isMediumScreen = useMediaQuery("(min-width : 640px)")
     if (isMediumScreen) {
         return (
-            <div className=' w-full bg-[#D9D9D9] h-auto py-[100px]'>
-                <div className=' w-3/4 flex justify-between mx-auto my-auto'>
-                    <div className=' flex flex-col gap-[50px]'>
-                        <div className=' flex gap-5'>
-                            <img src={logo} alt="" width={250} />
-                            <h1 className=' my-auto text-[70px] font-semibold'>Trekk & Travel</h1>
-                            <h1 className=' my-auto text-[35px] mb-[95px] ml-[-190px]'>HOLIDAYS</h1>
-                        </div>
-                        <div className='bg-orange-500 w-auto h-auto py-[15px] px-[5px] rounded-[80px]'>
-                            <h1 className='flex justify-center gap-5 text-[65px] mt-[5px] text-white text-center'><span className=' text-[85px]'><BsTelephoneFill /></span>+91 9947172630</h1>
-                        </div>
-                        <div className=' flex flex-col gap-[50px]'>
-                            <div className=' text-orange-500 flex inline-flex text-[60px] font-semibold '><span className=' text-[85px]'><IoLocationSharp /></span>Headquarters</div>
-                        </div>
-                        <div className=''>
-                            <h1 className=' text-[65px] w-[950px] text-gray-600 font-semibold'>Palam Jn, Natyamangalam, road, Kattuppara kerala 679323</h1>
-                        </div>
-                        <div className='pb-10 flex justify-between w-3/5  gap-5'>
-                            <a href="https://wa.me/9947172630"><FaWhatsapp className='  w-28 bg-gray-800 text-white px-5 py-5 rounded-full  h-28' /></a>
-                            <a href="https://instagram.com/trekkandtravel?igshid=YmMyMTA2M2Y="><FaInstagram className=' w-28 bg-gray-800 text-white px-5 py-5 rounded-full  h-28' /></a>
-                            <a href="https://www.facebook.com/trekkandtravel?mibextid=LQQJ4d"><FaFacebook className='  w-28 bg-gray-800 text-white px-5 py-5 rounded-full h-28' /></a>
-                            <a href="https://maps.app.goo.gl/T6f2gNVhectRp6ix6?g_st=iwb"><IoLocationSharp className='  w-28 bg-gray-800 text-white px-5 py-5 rounded-full h-28' /></a>
-
-                        </div>
+            <div className=' w-full bg-[#D9D9D9] h-auto py-10'>
+                <div className='mx-auto w-4/5 h-auto'>
+                    <div className=' flex '>
+                        <img src={logo} alt="" width={80}/>
+                        <h1 className=' my-auto font-semibold text-xl'>Trekk & Trevel</h1>
+                        <h1 className=' uppercase my-auto text-xs mt-16 ml-[-55px]'>holidays</h1>
                     </div>
+                    <div className=' w-40 h-auto bg-orange-500 rounded-3xl'>
+                        <h1 className=' py-1 text-white text-lg text-center'>+91 9947172630</h1>
+                    </div>
+                    <div className=' flex flex-col mt-5'>
+                        <h1 className=' flex font-semibold text-orange-500'><span className=' text-xl text-orange-500 '><IoLocationSharp/></span>Headquarters</h1>
+                        <h1 className=' text-gray-500 w-80 font-semibold'>Palam Jn, Natyamangalam, road, Kattuppara kerala 679323</h1>
+                    </div>
+                    <div className=' flex justify-between mt-5 w-1/4'>
+                        <a className=' text-3xl text-white bg-orange-500 px-2 py-2 rounded-full ' href="https://wa.me/9947172630"><FaWhatsapp/></a>
+                        <a className=' text-3xl text-white bg-orange-500 px-2 py-2 rounded-full ' href="https://instagram.com/trekkandtravel?igshid=YmMyMTA2M2Y="><FaInstagram/></a>
+                        <a className=' text-3xl text-white bg-orange-500 px-2 py-2 rounded-full ' href="https://www.facebook.com/trekkandtravel?mibextid=LQQJ4d"><FaFacebook/></a>
+                        <a className=' text-3xl text-white bg-orange-500 px-2 py-2 rounded-full ' href="https://maps.app.goo.gl/T6f2gNVhectRp6ix6?g_st=iwb"><IoLocationSharp/></a>
 
+                    </div>
                 </div>
-                <div>
-
-                </div>
+                
             </div>
         )
     }

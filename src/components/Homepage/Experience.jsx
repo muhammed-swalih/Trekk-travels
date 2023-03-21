@@ -10,48 +10,50 @@ function Experience() {
     const isMediumScreen = useMediaQuery("(min-width : 640px)")
     if (isMediumScreen) {
         return (
-            <div className='h-auto w-full bg-[#EBEBEB]'>
-                <div className=' w-5/6 h-auto mx-auto '>
-                    <div className=' flex justify-between'>
-                        <img className=' my-auto' src={bag} alt="" width={3500} />
-                        <div className=' my-auto'>
-                            <h1 className=' text-orange-500 font-semibold uppercase text-[65px]'>our expireince</h1>
-                            <h1 className=' uppercase text-[150px] font-semibold w-3/4'> package benfits to our custmores</h1>
-                            <h1 className=' text-[65px] text-gray-500 w-3/4'>Since we first opened we have always prioritized the convenience of our users by providing low prices and with a easy process.</h1>
-                            <div className=' flex justify-between w-3/4'>
-                                <div className=' mt-10 '>
-                                    <h1 className=' text-orange-500 text-[150px] font-bold'>10</h1>
-                                    <h1 className=' w-1/4 text-gray-500 text-[65px]'>years Expireince</h1>
-                                </div>
-                                <div className=' mt-10'>
-                                    <h1 className=' text-orange-500 text-[150px] font-bold'>200+</h1>
-                                    <h1 className=' w-1/4 text-gray-500 text-[65px]'>Destination Collaboration</h1>
-                                </div>
-                                <div className=' mt-10'>
-                                    <h1 className=' text-orange-500 text-[150px] font-bold'>50k</h1>
-                                    <h1 className=' w-1/4 text-gray-500 text-[65px]'>Happy Customers</h1>
-                                </div>
+            <div className='h-auto w-full bg-[#EBEBEB] py-5'>
+                <div className=' w-4/5 font-semibold h-auto flex justify-between mx-auto'>
+                    <div>
+                        <img src={bag} alt="" width={1500} />
+                    </div>
+                    <div className=' flex flex-col my-auto'>
+                        <h1 className=' text-orange-500 text-lg  uppercase'>our expireince</h1>
+                        <h1 className=' uppercase w-[520px] text-[40px]'>package benifits to our customer.</h1>
+                        <h1 className=' w-[520px] text-gray-500'>Since we first opened we have always prioritized the convenience of our users by providing low prices and with a easy process.</h1>
+                        <div className=' flex justify-between mt-5'>
+                            <div className=' flex flex-col'>
+                                <h1 className=' text-orange-500 text-5xl'>10</h1>
+                                <h1 className=' w-28 text-gray-500'>Years Experience</h1>
+
+                            </div>
+                            <div className='flex flex-col'>
+                                <h1 className=' text-orange-500 text-5xl'>200+</h1>
+                                <h1 className=' w-32 text-gray-500'>Destination Collaboration</h1>
+                            </div>
+                            <div className='flex flex-col'>
+                                <h1 className=' text-orange-500 text-5xl'>50k</h1>
+                                <h1 className=' w-32 text-gray-500'>Happy Customer</h1>
                             </div>
                         </div>
                     </div>
-                    <div className=' w-4/6 px-[250px] mx-auto py-32 flex justify-between'>
-                        <div className=' w-[500px] h-[450px] bg-white shadow-lg rounded-[80px] py-10'>
-                            <img className=' mx-auto ' src={value} alt="" width={300} />
-                            <h1 className=' text-center my-5 text-[40px] uppercase font-semibold'>value for money</h1>
-                        </div>
-                        <div className=' w-[500px] h-[450px] bg-white shadow-lg rounded-[80px] py-10'>
-                            <img className=' mx-auto ' src={save} alt="" width={300} />
-                            <h1 className=' text-center my-5 text-[40px] uppercase font-semibold'>save time</h1>
-                        </div>
-                        <div className=' w-[500px] h-[450px] bg-white shadow-lg rounded-[80px] py-10'>
-                            <img className=' mx-auto ' src={safeTravel} alt="" width={300} />
-                            <h1 className=' text-center my-5 text-[40px] uppercase font-semibold'>safe travel</h1>
-                        </div>
-                        <div className=' w-[500px] h-[450px] bg-white shadow-lg rounded-[80px] py-10'>
-                            <img className=' mx-auto ' src={help} alt="" width={300} />
-                            <h1 className=' text-center my-5 text-[40px] uppercase font-semibold'>24/7 help</h1>
-                        </div>
+                </div>
+                <div className=' mx-auto mt-5 w-2/4 flex justify-between'>
+                    <div className=' flex flex-col relative bg-white w-40 h-[150px] rounded-3xl border border-1 shadow-lg '>
+                        <img className=' bg-white rounded-3xl mx-auto my-auto' src={value} alt="" width={100} />
+                        <h1 className=' absolute px-3 py-3 font-semibold text-xs top-[110px] left-2 uppercase '>value for money</h1>
                     </div>
+                    <div className=' flex flex-col relative bg-white w-40 h-[150px] rounded-3xl border border-1 shadow-lg '>
+                        <img className=' bg-white rounded-3xl mx-auto my-auto' src={save} alt="" width={100} />
+                        <h1 className=' absolute px-3 py-3 font-semibold text-xs top-[110px] left-8 uppercase '>save time</h1>
+                    </div>
+                    <div className=' flex flex-col relative bg-white w-40 h-[150px] rounded-3xl border border-1 shadow-lg '>
+                        <img className=' bg-white rounded-3xl mx-auto my-auto' src={safeTravel} alt="" width={100} />
+                        <h1 className=' absolute px-3 py-3 font-semibold text-xs top-[110px] left-7 uppercase '>safe travel</h1>
+                    </div>
+                    <div className=' flex flex-col relative bg-white w-40 h-[150px] rounded-3xl border border-1 shadow-lg '>
+                        <img className=' bg-white rounded-3xl mx-auto my-auto' src={help} alt="" width={100} />
+                        <h1 className=' absolute px-3 py-3 font-semibold text-xs top-[110px] left-9 uppercase '>24/7 help</h1>
+                    </div>
+                    
                 </div>
             </div>
         )

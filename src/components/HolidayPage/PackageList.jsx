@@ -6,6 +6,7 @@ import { useMediaQuery } from '@react-hook/media-query'
 import holidayPaper from '../../TREKK TRAVEL ASSETSS/ALL PACKAGE/holiday.webp'
 import { useNavigate } from 'react-router-dom'
 import {BiRupee} from 'react-icons/bi'
+import FamilyDetails from '../../Pages/FamilyDetails'
 function PackageList() {
     const navigate = useNavigate();
     const isMediumScreen = useMediaQuery('(min-width : 640px)')
@@ -25,39 +26,33 @@ function PackageList() {
 
     if (isMediumScreen) {
         return (
-            <div className=' w-full min-h-screen h-auto bg-[#EBEBEB] pt-[450px] pb-[50px] '>
-
-                <div className=' w-full h-auto text-center'>
-                    <img className=' mx-auto' src={holidayPaper} alt="" width={3200} />
-                </div>
-
-                <div className=' flex flex-wrap w-[4300px] rounded-3xl mx-auto h-auto px-[50px] py-[50px]'>
-                    {image.map((items) => {
-                        const base64String = btoa(
-                            String.fromCharCode(...new Uint32Array((items.image.data.data)))
-                        )
-                        return (
-                            <div className=' w-[1900px] h-[1280px] rounded-3xl bg-black relative mx-auto my-[90px]'>
-                                <img className=' opacity-50 w-full h-full object-cover rounded-3xl  ' src={`data:image/jpeg;base64,${base64String}`} alt="" />
-                                <div className=' absolute ml-5 top-[900px] w-full'>
-                                    <h1 className=' text-[100px] w-[1050px] rounded-lg my-3 font-light text-white px-5'>{items.place}</h1>
-                                    <h1 className=' text-[50px] text-gray-600 w-[600px] my-3 font-light text-white px-5'>{items.days}</h1>
-                                    <h1 className=' text-[50px] w-[350px] my-3 font-light text-white px-5 flex inline-flex'><span className=' text-[65px]'><BiRupee/></span>{items.price}</h1>
-                                </div>
-                                <div onClick={()=>{
-                                    navigateHolidayDetails(items._id)
-                                }} className=' absolute top-[1100px] mr-10 rounded-2xl right-5 cursor-pointer'>
-                                    <h1 className=' px-5 py-4 rounded-2xl float-right uppercase text-[55px] font-light text-white border border-1'>view deal</h1>
-                                </div>
-                               
-                            </div>
-                        )
-                    })}
-
-
-
-                </div>
+            <div className=' w-full min-h-screen h-auto bg-[#EBEBEB] pt-28 '>
+            <div className=' w-3/5 h-auto mx-auto'>
+                <img src={holidayPaper} alt="" />
             </div>
+            <div className=' w-[1100px] mx-auto h-auto flex flex-wrap justify-around gap-14 rounded-3xl py-10'>
+                {image.map((items) => {
+                    const base64String = btoa(
+                        String.fromCharCode(...new Uint32Array((items.image.data.data)))
+                    )
+                    return (
+
+                        <div className='mx-auto w-[500px] h-80 bg-black rounded-3xl relative'>
+                            <img className='w-full h-full object-cover rounded-3xl opacity-50' src={`data:image/jpeg;base64,${base64String}`} alt="" />
+                            <h1 className=' absolute text-white top-56 text-3xl left-4 font-light'>{items ? items.place : "place"}</h1>
+                            <h1 className=' absolute text-white font-light top-[260px]  ml-4'>{items ? items.days : ""}</h1>
+                            <h1 className=' absolute text-white font-light text-xs top-[285px]  ml-4 flex'><span className=''><BiRupee/></span>{items ? items.price : ""}</h1>
+                            <button onClick={()=>{
+                                navigateHolidayDetails(items._id)
+                            }} className=' px-1 py-1 rounded-lg  uppercase absolute top-0 border border-1 border-white text-white right-4 top-[270px]'>view deal</button>
+                        </div>
+                    )
+                })}
+
+
+            </div>
+          
+        </div>
         )
     }
     return (

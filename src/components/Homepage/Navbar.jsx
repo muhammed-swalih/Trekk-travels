@@ -15,7 +15,7 @@ function Navbar() {
   //navbar handling
 
   const navBarTransition = ()=>{
-    if(window.scrollY > 1000){
+    if(window.scrollY > 100){
       setNav (true)
     }else {
       setNav(false)
@@ -93,40 +93,61 @@ function Navbar() {
 
     return (
 
-      //w-full h-auto bg-[#DCDCDC] fixed z-10
-      <div className={nav ? 'w-full h-auto bg-[#EBEBEB] fixed z-10' : 'w-full h-auto bg-[#DCDCDC] fixed z-10'}> 
-        <div className={nav ? 'md:w-4/4 mx-auto flex inline-flext gap-80 justify-evenly bg-[#EBEBEB]' : 'md:w-4/4 mx-auto flex inline-flext gap-80 justify-evenly bg-[#DCDCDC]' }>
-          <div className=' md:flex inline-flex'>
-            <img className=' md:w-[280px]' src={logo} alt="" width={250} />
-            <h1 className=' md:my-auto font-bold text-[80px] '>Trekk & Travel</h1>
-            <h1 className=' uppercase my-auto text-[40px] mt-[215px] ml-[-190px]'>holidays</h1>
-          </div>
-          <div className=' md:flex inline-flex gap-40 '>
-            <div className=' md:text-[50px] my-auto font-medium '>
-              <h1 onClick={homeNavigation}  className=' flex gap-5 hover:text-blue-900 hover:underline '>Home </h1>
+      <div className={nav ? ' w-full bg-[#EBEBEB] shadow-xl fixed z-10' : ' w-full bg-[#DCDCDC] shadow-xl fixed z-10' }>
+          <div className=' w-5/6 h-auto  flex justify-between mx-auto'>
+            <div className=' flex gap-2'>
+              <img className=' ' src={logo} alt="" width={60} />
+              <h1 className=' my-auto font-semibold text-lg'>Trekk & travel</h1>
+              <h1 className='uppercase text-xs mt-12 ml-[-65px]'>holidays</h1>
             </div>
-            <div className=' md:text-[50px] my-auto font-medium'>
-              <h1 onClick={honeymoonNavigation}  className=' flex gap-5 hover:text-blue-900 hover:underline'>Honeymoon Packages </h1>
-            </div>
-            <div className=' md:text-[50px] my-auto font-medium'>
-              <h1 onClick={familyNavigation} className=' flex gap-5 hover:text-blue-900 hover:underline'>Family Packages </h1>
-            </div>
-            <div className=' md:text-[50px] my-auto font-medium'>
-              <h1 onClick={holidayNavigation} className=' flex gap-5 hover:text-blue-900 hover:underline'>Holiday Packages</h1>
-            </div>
-            <div className=' md:text-[50px] my-auto font-medium'>
-              <h1 onClick={resortNavigation} className=' flex gap-5 hover:text-blue-900 hover:underline'>Resorts </h1>
-            </div>
-            <div className=' md:text-[50px] my-auto font-medium'>
-              <h1 onClick={contactNavigation}  className='flex gap-5 hover:text-blue-900 hover:underline'>Contact</h1>
-            </div>
-            <div className=' md:text-[50px] my-auto font-medium'>
-              <h1 onClick={aboutUsNavigation}  className='flex gap-5 hover:text-blue-900 hover:underline'>About</h1>
+            <div className=' my-auto flex gap-10 font-medium'>
+              <h1 onClick={homeNavigation} className='text-sm hover:underline hover:text-blue-800'>Home</h1>
+              <h1 onClick={honeymoonNavigation} className='text-sm hover:underline hover:text-blue-800'>Honeymoon package</h1>
+              <h1 onClick={familyNavigation} className='text-sm hover:underline hover:text-blue-800'>Family package</h1>
+              <h1 onClick={holidayNavigation} className='text-sm hover:underline hover:text-blue-800'>Holiday package</h1>
+              <h1 onClick={resortNavigation} className='text-sm hover:underline hover:text-blue-800'>Resort</h1>
+              <h1 onClick={aboutUsNavigation} className='text-sm hover:underline hover:text-blue-800'>About us</h1>
+              <h1 onClick={contactNavigation} className='text-sm hover:underline hover:text-blue-800'>contact</h1>
             </div>
           </div>
-
-        </div>
       </div>
+
+      //w-full h-auto bg-[#DCDCDC] fixed z-10
+      // <div className={nav ? 'w-full h-auto bg-[#EBEBEB] fixed z-10' : 'w-full h-auto bg-[#DCDCDC] fixed z-10'}> 
+      //   <div className={nav ? 'md:w-full mx-auto flex inline-flext gap-80 justify-evenly bg-[#EBEBEB]' : 'md:w-4/4 mx-auto flex inline-flex gap-5 justify-evenly bg-[#DCDCDC]' }>
+      //     {/* <div className=' md:flex inline-flex px-20'>
+      //       <img className=' md:w-[60px]' src={logo} alt="" width={50} />
+      //       <h1 className=' md:my-auto font-bold text-lg flex inline-flex '>Trekk & Travel</h1>
+      //       <h1 className=' uppercase my-auto text-xs'>holidays</h1>
+      //     </div>
+      //     <div className=' md:flex inline-flex gap-40'>
+      //       <div className='  my-auto font-medium  text-xs'>
+      //         <h1 onClick={homeNavigation}  className=' flex gap-5 hover:text-blue-900 hover:underline '>Home </h1>
+      //       </div>
+      //       <div className=' md:text-xs my-auto font-medium'>
+      //         <h1 onClick={honeymoonNavigation}  className=' flex gap-5 hover:text-blue-900 hover:underline'>Honeymoon Packages </h1>
+      //       </div>
+      //       <div className=' md:text-xs my-auto font-medium'>
+      //         <h1 onClick={familyNavigation} className=' flex gap-5 hover:text-blue-900 hover:underline'>Family Packages </h1>
+      //       </div>
+      //       <div className=' md:text-xs my-auto font-medium'>
+      //         <h1 onClick={holidayNavigation} className=' flex gap-5 hover:text-blue-900 hover:underline'>Holiday Packages</h1>
+      //       </div>
+      //       <div className=' md:text-xs my-auto font-medium'>
+      //         <h1 onClick={resortNavigation} className=' flex gap-5 hover:text-blue-900 hover:underline'>Resorts </h1>
+      //       </div>
+      //       <div className=' md:text-xs my-auto font-medium'>
+      //         <h1 onClick={contactNavigation}  className='flex gap-5 hover:text-blue-900 hover:underline'>Contact</h1>
+      //       </div>
+      //       <div className=' md:text-xs my-auto font-medium'>
+      //         <h1 onClick={aboutUsNavigation}  className='flex gap-5 hover:text-blue-900 hover:underline'>About</h1>
+      //       </div>
+      //     </div> */}
+      //     <div className=' w-96 h-10 bg-black  flex justify-between mx-auto'>
+      //         <h1>hello</h1>
+      //     </div>
+      //   </div>
+      // </div>
     )
   }
 

@@ -39,7 +39,41 @@ function Navbar() {
   if (isMediumScreen) {
     return (
       <div className=' w-full min-h-screen h-auto bg-contain' style={{ backgroundImage: `url(${pcBg})` }}>
-        <div className=' w-3/4 h-80 flex justify-between pl-[350px]'>
+        <div className=' w-5/6 h-auto  flex justify-between mx-auto'>
+          <div className=' flex gap-2'>
+            <img className=' ' src={logo} alt="" width={60} />
+            <h1 className=' my-auto font-semibold text-lg'>Trekk & travel</h1>
+            <h1 className='uppercase text-xs mt-12 ml-[-65px]'>holidays</h1>
+          </div>
+          <div className=' my-auto flex gap-10 font-medium'>
+            <h1 onClick={homeNavigation} className='text-sm hover:underline hover:text-blue-800'>Home</h1>
+            <h1 onClick={honeymoonNavigation} className='text-sm hover:underline hover:text-blue-800'>Honeymoon package</h1>
+            <h1 onClick={familyNavigation} className='text-sm hover:underline hover:text-blue-800'>Family package</h1>
+            <h1 onClick={holidayNavigation} className='text-sm hover:underline hover:text-blue-800'>Holiday package</h1>
+            <h1 onClick={resortNavigation} className='text-sm hover:underline hover:text-blue-800'>Resort</h1>
+            <h1 onClick={contactNavigation} className='text-sm hover:underline hover:text-blue-800'>contact</h1>
+          </div>
+        </div>
+        <div className=' flex justify-between h-screen w-4/5 mx-auto my-auto'>
+          <div className=' my-auto w-3/6'>
+            <img className='' src={pageTar} alt="" />
+          </div>
+          <div className=' w-3/6 h-auto px-5 py-5 font-medium bg-white my-auto rounded-xl'>
+            <h1>Trekk & travel holidays is a professional team of passionate travel professionals. specializes in designing top end, budget oriented, travel products focusing on Cultural & Heritage, Adventure, Wildlife, Yoga & Ayurveda and Wellness, Beaches, Trains and Cruises, Incentive Weddings and Medical Tourism.
+              We create personalised travel itineraries and offer the hassle-free holiday experience based on the guest's interests and requirements and choices. Ranging from luxury, heritage, and cultural holidays; adventure treks, cycling tours; incentive groups, events, Trekk & travel holidays is a one stop for all travel and holidaying needs.</h1>
+              <ul className=' mt-5 ml-5 list-disc'>
+              <li className=' my-2'>Highest Operating Standards</li>
+              <li className=' my-2'>Friendly & well-informed Staff</li>
+              <li className=' my-2'>Travel itinerary consultations</li>
+              <li className=' my-2'>Tailor made holiday packages</li>
+              <li className=' my-2'>Private Tours for individuals and groups</li>
+              <li className=' my-2'>Competent in organising and bookings</li>
+              <li className=' my-2'>Save time and effort</li>
+              <li className=' my-2'>Well Recognised Tour Operator</li>
+              </ul>
+          </div>
+        </div>
+        {/* <div className=' w-3/4 h-80 flex justify-between pl-[350px]'>
           <div className=' font-semibold text-[60px] my-auto'>Trekk & Travel</div>
           <div className=' flex justify-evenly text-[50px] my-auto w-3/4'>
             <h1 onClick={homeNavigation} className=' flex gap-5 hover:underline hover:text-blue-800'>Home </h1>
@@ -71,7 +105,7 @@ function Navbar() {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     )
   }

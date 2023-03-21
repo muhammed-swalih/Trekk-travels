@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import testImage from '../../TREKK TRAVEL ASSETSS/HOME PAGE/IMAGES/maldives.webp'
 import { useMediaQuery } from '@react-hook/media-query'
-import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
+import { AiOutlineCaretLeft, AiOutlineCaretRight, AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 function ThrissurResorts() {
@@ -12,11 +12,11 @@ function ThrissurResorts() {
 
     const [resort, setResort] = useState([])
     const handleNextImage = () => {
-        document.getElementById('thrissur').scrollLeft -= 1500
+        document.getElementById('thrissur').scrollLeft -= 500
     }
 
     const handlePrevImage = () => {
-        document.getElementById('thrissur').scrollLeft += 1500
+        document.getElementById('thrissur').scrollLeft += 500
     }
 
     const fetchHoneyMoonPackage = async () => {
@@ -31,38 +31,33 @@ function ThrissurResorts() {
     const isMediumScreen = useMediaQuery('(min-width : 640px)')
     if (isMediumScreen) {
         return (
-            <div className=' pb-[400px] w-4/4 h-auto bg-[#EBEBEB]  '>
-                <div className=' w-5/6 h-auto mx-auto '>
-                    <h1 className=' uppercase text-[65px] font-semibold text-orange-500'>top destination</h1>
-                    <h1 className=' text-[105px] my-3 font-semibold flex gap-5'>Best Thrissur Resorts <span><img src='' alt="" width={180} /></span></h1>
-                </div>
-                <div className=' w-5/6 h-auto  mx-auto flex justify-end gap-20'>
-                    <button onClick={handleNextImage} className=' px-[50px] py-[50px] rounded-full text-[60px] bg-orange-400'><h1 className=' my-auto mx-auto'><AiOutlineLeft /></h1></button>
-                    <button onClick={handlePrevImage} className=' px-[50px] py-[50px] rounded-full text-[60px] bg-orange-400'><h1 className=' my-auto mx-auto'><AiOutlineRight /></h1></button>
-                </div>
-                <div id='thrissur' className=' scroll-smooth flex gap-16 w-5/6 h-auto  my-20 mt-32 mx-auto overflow-scroll hide-scrollbar rounded-3xl'>
+            <div className=' pb-14 w-4/4 h-auto bg-[#EBEBEB]  '>
+                <div className=' flex w-4/5 mx-auto  flex-col gap-3'>
+                    <h1 className=' uppercase font-semibold text-orange-500'>top destinations</h1>
+                    <div className='flex justify-between'>
+                        <h1 className=' font-semibold text-4xl flex gap-2'>Best Thrissur Resort</h1>
+                        <div className=' flex gap-2'>
+                            <button onClick={handleNextImage} className=' bg-orange-500 px-3 rounded-full py-3'><AiOutlineCaretLeft /></button>
+                            <button onClick={handlePrevImage} className=' bg-orange-500 px-3 rounded-full py-3'><AiOutlineCaretRight /></button>
+                        </div>
+                    </div>
+                    <div id='thrissur' className='relative scroll-smooth flex gap-3 overflow-scroll hide-scrollbar rounded-2xl mt-5'>
+                        {resort.map((items) => {
+                            const base64String = btoa(
+                                String.fromCharCode(...new Uint32Array((items.image.data.data)))
+                            )
+                            return (
 
-                    {resort.map((items) => {
-                        const base64String = btoa(
-                            String.fromCharCode(...new Uint32Array((items.image.data.data)))
-                        )
-                        return (
-
-                            <div className='relative flex-shrink-0 w-[1450px] h-[1000px] bg-black rounded-3xl'>
-                                <img className=' opacity-50 w-full h-full object-cover rounded-3xl' src={`data:image/jpeg;base64,${base64String}`} alt="" />
-                                <div className=' absolute ml-5 top-[650px] w-full'>
-                                    <h1 className=' text-[100px] w-[1050px] rounded-lg my-3 font-light text-white px-5 w-2/3'>{items ? items.place : "place Name"}</h1>
+                                <div className='relative flex-shrink-0 rounded-2xl w-[350px] h-60 bg-black'>
+                                    <img className='opacity-50 w-full h-full object-cover rounded-2xl' src={`data:image/jpeg;base64,${base64String}`} alt="" />
+                                    <h1 className=' absolute top-44 text-white text-2xl font-light left-3 '>{items ? items.place : "nothing"}</h1>
+                                    <button onClick={()=>navigateResort(items._id)} className='absolute top-[190px] text-white border font-semibold py-1 border-1 border-white px-2 rounded right-3'>View Deal</button>
                                 </div>
-                                <div onClick={() => {
-                                    navigateResort(items._id)
-                                }} className=' absolute top-[800px] mr-10 rounded-2xl right-5 cursor-pointer'>
-                                    <h1 className=' px-5 py-4 rounded-2xl float-right uppercase text-[55px] font-light text-white border border-1'>view deal</h1>
-                                </div>
+                            )
+                        })}
 
+                    </div>
 
-                            </div>
-                        )
-                    })}
                 </div>
             </div>
         )
@@ -73,7 +68,7 @@ function ThrissurResorts() {
                 <div className=' px-5'>
                     <h1 className=' font-bold tracking-wide text-orange-500 uppercase text-sm'>Top Destination</h1>
                     <h1 className=' text-xl font-bold flex inline-flex gap-1'>Best Thrissur Resorts <span><img src='' alt="" width={30} /></span></h1>
-                    <div className='  flex overflow-scroll py-5 gap-3 relative'>
+                    <div className='  flex overflow-scroll py-5 gap-3 relative hide-scrollbar'>
 
                         {resort.map((items) => {
                             const base64String = btoa(

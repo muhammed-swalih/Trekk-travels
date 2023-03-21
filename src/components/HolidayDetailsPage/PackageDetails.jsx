@@ -36,38 +36,37 @@ function PackageDetails() {
     const isMediumScreen = useMediaQuery('(min-width : 640px)')
     if (isMediumScreen) {
         return (
-            <div className=' scroll-smooth w-full h-auto bg-[#EBEBEB] pt-[420px] pb-[150px]'>
-                <div className=' w-4/6 h-auto  mx-auto mt-[100px] flex justify-between py-[20px]'>
-                    <div className=' w-[2300px] h-[1300px]  rounded-3xl'>
-                        {base && <img className=' w-full h-full object-cover rounded-3xl' src={`data:image/jpeg;base64,${base}`} alt="" />}
-                    </div>
-                    <div className=' flex flex-col px-10 my-auto  items-start gap-[50px]'>
-                        <h1 className=' text-[150px] '>{details ? details.place : "Place name"}</h1>
-                        <h1 className=' text-[75px] '>{details ? details.days : "no of days"}</h1>
-                        <button className=' uppercase w-auto px-[10px] font-semibold rounded-3xl text-[65px] border border-[10px] px-[50px] border-orange-500 flex inline-flex'><span className=' text-[85px]'><BiRupee /></span>{details ? details.price : "price"}</button>
-                        <div className=' text-[80px] w-full h-auto bg-orange-500 text-center  text-white uppercase rounded-3xl py-4'>
-                            <a href="https://wa.me/9947172630"><h1>get a quote</h1></a>
+            <div className=' w-full min-h-screen h-auto bg-[#EBEBEB] pt-32 pb-10'>
+            <div className=' w-4/6 h-auto mx-auto flex justify-between'>
+                <div className=' w-[500px] h-[400px]  rounded-2xl'>
+                   {base && <img className='rounded-2xl w-full h-full object-cover' src={`data:image/jpeg;base64,${base}`} alt="" />} 
+                </div>
+                <div className=' my-auto '>
+                    <h1 className='  my-auto text-6xl font-medium'>{details ? details.place : ""}</h1>
+                    <h1 className=' text-2xl'>{details ? details.days : ""}</h1>
+                    <div className=' mt-3 w-40 px-3 py-1 text-2xl border border-2 rounded-xl border-orange-500 flex'><span><BiRupee/></span>{details ? details.price : ""}</div>
+                    <a href="https://wa.me/9947172630">
+                        <div className=' w-60 h-auto text-white rounded-xl bg-orange-500 mt-5'>
+                            <h1 className=' text-center py-1 uppercase font-medium'>get a quote</h1>
                         </div>
-                    </div>
-                </div>
-                <div className=' mt-[100px]  border border-1 border-gray-400 rounded-3xl w-4/6 h-auto px-[80px] py-[50px] mx-auto bg-[#D9D9D9]'>
-                    <h1 className='  text-[65px]'>Highlights</h1>
-                    <ul className=' mt-[30px]  list-disc text-[50px] ml-[50px]'>
-                        {details && details.highlight1 && <li>{details ? details.highlight1 : "nothing"}</li>}
-                        {details && details.highlight2 && <li>{details ? details.highlight2 : "nothing"}</li>}
-                        {details && details.highlight3 && <li>{details ? details.highlight3 : "nothing"}</li>}
-                        {details && details.highlight4 && <li>{details ? details.highlight4 : "nothing"}</li>}
-                        {details && details.highlight5 && <li>{details ? details.highlight5 : "nothing"}</li>}
-                        {details && details.highlight6 && <li>{details ? details.highlight6 : "nothing"}</li>}
-                    </ul>
-                </div>
-                <div className='mx-auto w-4/6 h-auto bg-[#D9D9D9] px-[150px] py-[150px] border border-1 border-gray-400 rounded-3xl mt-[100px]'>
-                    <h1 className=' text-[60px]'>
-                        {details ? details.description : "description"}
-
-                    </h1>
+                        </a>
                 </div>
             </div>
+            <div className='mx-auto mt-10 rounded-2xl shadow-lg bg-white w-4/6 h-auto px-4 py-4'>
+                <h1 className=' font-semibold text-lg'>Highlights</h1>
+                <ul className=' list-disc ml-10 mt-5'>
+                {details && details.highlight1 && <li>{details ? details.highlight1 : "nothing"}</li>}
+                    {details && details.highlight2 && <li>{details ? details.highlight2 : "nothing"}</li>}
+                    {details && details.highlight3 && <li>{details ? details.highlight3 : "nothing"}</li>}
+                    {details && details.highlight4 && <li>{details ? details.highlight4 : "nothing"}</li>}
+                    {details && details.highlight5 && <li>{details ? details.highlight5 : "nothing"}</li>}
+                    {details && details.highlight6 && <li>{details ? details.highlight6 : "nothing"}</li>}
+                </ul>
+            </div>
+            <div className='px-5 py-5 mx-auto mt-5 w-4/6 bg-white h-auto rounded-2xl shadow-lg'>
+            {details ? details.description : "none"}
+            </div>
+        </div>
         )
     }
     return (
@@ -84,7 +83,9 @@ function PackageDetails() {
                         </div>
                         <div className=' mt-3'>
                             <button className=' border border-2  border-orange-500 px-5 py-1 rounded-lg font-semibold uppercase flex inline-flex'><span className=' text-xl'><BiRupee /></span>{details ? details.price : "price"}</button>
+
                         </div>
+
                         <div className=' mt-4 w-full rounded-lg h-auto text-center bg-orange-500'>
                             <a href="https://wa.me/9947172630" target="_blank"><h1 className=' uppercase text-white py-1 '>get a quote </h1></a>
                         </div>

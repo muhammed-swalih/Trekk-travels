@@ -9,8 +9,37 @@ function Service() {
 
   if (isMediumScreen) {
     return (
-      <div className=' w-full h-auto py-5 bg-[#EBEBEB]'>
-        <div className=' w-4/4 h-auto mx-auto  py-10 '>
+      <div className=' w-full h-auto py-5 bg-[#EBEBEB] '>
+        <div className='w-4/5 min-h-10 h-auto  mx-auto flex justify-between py-10'>
+            <div className=' flex flex-col '>
+                <h1 className=' uppercase font-semibold text-orange-500'>what we serve</h1>
+                <h1 className=' text-2xl font-semibold w-40 flex gap-1'>Top Values</h1>
+                <h1 className=' text-2xl font-semibold w-40 flex gap-1 flex gap-1'>For You <span><img  src={fire} alt="" width={30} /></span></h1>
+                <h1 className=' font-semibold text-gray-500 w-48 text-sm'>Try a verity of benefits  when using our services.</h1>
+            </div>
+            <div>
+              <div className=' flex flex-col '>
+                  <img src={globe} alt="" width={50} />
+                  <h1 className=' font-semibold'>Lot of Choises</h1>
+                  <h1 className=' w-52 text-sm font-semibold text-gray-500'>Total 200 destinations that we work with.</h1>
+              </div>
+            </div>
+            <div>
+              <div className=' flex flex-col my-auto '>
+                  <img src={bag} alt="" width={50} />
+                  <h1 className=' font-semibold'>Best Tour Guide</h1>
+                  <h1 className=' w-52 text-sm font-semibold text-gray-500'>Our tour guide with 15+ years of experience.</h1>
+              </div>
+            </div>
+            <div>
+              <div className=' flex flex-col '>
+                  <img src={pass} alt="" width={50} />
+                  <h1 className=' font-semibold'>Easy Booking</h1>
+                  <h1 className=' w-52 text-sm font-semibold text-gray-500'>With an easy and fast ticket purchase process.</h1>
+              </div>
+            </div>
+        </div>
+        {/* <div className=' w-4/4 h-auto mx-auto  py-10 '>
 
           
           <div className=' w-5/6 h-auto mx-auto  flex justify-between '>
@@ -37,7 +66,7 @@ function Service() {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
       </div>
     )

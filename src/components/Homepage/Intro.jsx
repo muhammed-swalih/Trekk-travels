@@ -7,16 +7,32 @@ function Intro() {
     const isMediumScreen = useMediaQuery("(min-width : 640px)")
     if (isMediumScreen) {
         return (
-            <div className=' bg-[#EBEBEB] w-full pt-[400px]'>
-                <div className=' w-3/4 mx-auto h-auto bg-[#EBEBEB] py-40 flex  justify-between '>
+            <div className=' bg-[#EBEBEB] w-full pt-24 h-auto '>
+                <div className='w-4/5 min-h-10 h-auto flex justify-between mx-auto  '>
+                    <div className=' flex flex-col gap-1 my-auto'>
+                        <div className='rounded-2xl w-56 h-auto bg-orange-100'>
+                            <h1 className=' flex gap-2 py-2 px-2 text-orange-500 font-medium'>Explore the world <span><img src={globe} alt="" width={25} /></span></h1>
+                        </div>
+                        <div>
+                            <h1 className=' text-[50px] w-96 font-semibold'>it's a Big World Out There, Go And Explore</h1>
+                        </div>
+                        <div>
+                            <h1 className=' font-medium text-gray-600 w-96'>We always make our customer happy by providing as many choises as possible</h1>
+                        </div>
+                    </div>
+                    <div>
+                        <img src={girl} alt="" />
+                    </div>
+                </div>
+                {/* <div className=' w-3/4 mx-auto h-auto bg-[#EBEBEB] py-40 flex  justify-between '>
                     <div className='  h-auto my-auto'>
                         <div>
-                            <h1 className=' flex inline-flex text-orange-500 border border-1 bg-orange-100 rounded-full text-[60px] px-10 py-5 gap-2'>Explore the world <span><img src={globe} alt="" /></span></h1>
+                            <h1 className=' flex inline-flex text-orange-500 border border-1 bg-orange-100 rounded-full  px-2 py-1 gap-2 my-auto'>Explore the world <span><img src={globe} alt="" width={20} /></span></h1>
                         </div>
-                        <div className=' w-[1600px]'>
-                            <h1 className=' text-[180px] font-semibold'>It's a Big World Out There, Go And Explore</h1>
+                        <div className=' w-1/3 my-5'>
+                            <h1 className=' text-[60px] font-semibold'>It's a Big World Out There, Go And Explore</h1>
                         </div>
-                        <div className=' w-[1400px]'>
+                        <div className=' w-1/3'>
                             <h1 className=' text-[65px] text-gray-500'>We always make our customer happy by providing as many choises as possible</h1>
                         </div>
                     </div>
@@ -26,7 +42,7 @@ function Intro() {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
             </div>
         )
     }

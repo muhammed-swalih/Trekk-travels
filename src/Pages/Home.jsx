@@ -17,13 +17,13 @@ function Home() {
     <div>
         <Navbar/>
         <Intro/>
-        <Service/>
-        <TopDestination/>
+        <Service/> 
+        <TopDestination/> 
         <BestHoneymoon/>
         <BestFamily/>
         <Experience/>
         <Ads/>
-        <Footer/>
+        <Footer/>  
     </div>
   )
 }

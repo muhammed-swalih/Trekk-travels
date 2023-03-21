@@ -40,30 +40,28 @@ function MalappuramDetails() {
   if (isMediumScreen) {
     return (
       <div className=' w-full min-h-screen h-auto'>
-        <Navbar />
-        <div className=' w-full h-auto bg-[#EBEBEB] pt-[420px] pb-[150px]'>
-          <div className=' w-4/6 h-auto  mx-auto mt-[100px] flex justify-between py-[20px]'>
-            <div className=' w-[2300px] h-[1300px] bg-white rounded-3xl'>
-              {base && <img className=' w-full h-full object-cover rounded-3xl' src={`data:image/jpeg;base64,${base}`} alt="" />}
-            </div>
-            <div className=' flex flex-col px-10 my-auto items-start gap-[50px]'>
-              <h1 className=' text-[150px] '>{details ? details.place : "place name"}</h1>
-
-              <div className=' text-[80px] w-full h-auto bg-orange-500 text-center  text-white uppercase rounded-3xl py-4'>
-
-                <a href="https://wa.me/9947172630"><h1>get a quote</h1></a>
-              </div>
-            </div>
+      <Navbar/>
+      <div className=' w-full min-h-screen h-auto bg-[#EBEBEB] pt-32 pb-10'>
+      <div className=' w-4/6 h-auto mx-auto flex justify-between'>
+          <div className=' w-[500px] h-[400px]  rounded-2xl'>
+             {base && <img className='rounded-2xl w-full h-full object-cover' src={`data:image/jpeg;base64,${base}`} alt="" />} 
           </div>
-          <div className='mx-auto w-4/6 h-auto bg-[#D9D9D9] px-[150px] py-[150px] border border-1 border-gray-400 rounded-3xl mt-[100px]'>
-            <h1 className=' text-[60px]'>
-              {details ? details.description : "desc"}
-
-            </h1>
+          <div className=' my-auto '>
+              <h1 className='  my-auto text-4xl w-60 font-medium'>{details ? details.place : ""}</h1>
+              <h1 className=' text-2xl'>{details ? details.days : ""}</h1>
+              <a href="https://wa.me/9947172630">
+                        <div className=' w-60 h-auto text-white rounded-xl bg-orange-500 mt-5'>
+                            <h1 className=' text-center py-1 uppercase font-medium'>get a quote</h1>
+                        </div>
+                        </a>
           </div>
-        </div>
-        <Footer />
       </div>
+      <div className='px-5 py-5 mx-auto mt-5 w-4/6 bg-white h-auto rounded-2xl shadow-lg'>
+      {details ? details.description : "none"}
+      </div>
+  </div>
+      <Footer/>
+  </div>
 
     )
   }

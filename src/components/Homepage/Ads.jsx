@@ -18,8 +18,43 @@ function Ads() {
     }, [])
     if (isMediumScreen) {
         return (
-            <div className=' w-full h-auto py-10 bg-[#EBEBEB]'>
-                <div className="fixed bottom-[200px] w-[200px] h-[200px] rounded-full right-[100px] bg-green-500">
+            <div className=' w-full h-auto  bg-[#EBEBEB] py-10 '>
+                <div className=' fixed bottom-32 w-16 h-16 right-10 rounded-full bg-green-500  '>
+                    <a href="https://wa.me/9947172630" target="_blank">
+                        <FaWhatsapp className="text-4xl  mx-auto mt-3   text-white hover:text-green-600" />
+                    </a>
+                </div>
+                {image.map((items) => {
+                    const base64String = btoa(
+                        String.fromCharCode(...new Uint32Array((items.image.data.data)))
+                    )
+                    return (
+
+                        <div className='  w-3/5 h-60 rounded-3xl bg-black mx-auto'>
+                            <img className=' w-full h-full object-cover rounded-3xl' src={`data:image/jpeg;base64,${base64String}`} alt="" />
+                        </div>
+                    )
+                })}
+                <div className=' mt-40 flex justify-between w-4/5 mx-auto'>
+                    <div className=' flex flex-col gap-2'>
+                        <h1 className=' text-lg uppercase text-orange-500 font-semibold'>what they say</h1>
+                        <h1 className=' text-5xl font-semibold w-[500px]'>What Our Customer </h1>
+                        <h1 className=' text-5xl font-semibold w-[500px] flex'>Say About Us <span><img src={star} alt="" width={50} /></span> </h1>
+                        <h1 className=' w-96 text-gray-500 font-semibold'>“I am a traveler and trekk&travel helps me a lot in finding interesting tourist destinations and of course the price offered is very worth it.”</h1>
+                        <h1 className=' font-semibold text-xl'>Muhammed Swalih</h1>
+                        <div className=' mt-2 flex justify-between w-2/5'>
+                            <img src={staring} alt="" />
+                            <img src={staring} alt="" />
+                            <img src={staring} alt="" />
+                            <img src={staring} alt="" />
+                            <img src={staring} alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <img src={customers} alt="" />
+                    </div>
+                </div>
+                {/* <div className="fixed bottom-[200px] w-[200px] h-[200px] rounded-full right-[100px] bg-green-500">
                     <a href="https://wa.me/9947172630" target="_blank">
                         <FaWhatsapp className="text-[130px] mx-auto mt-9  text-white hover:text-green-600" />
                     </a>
@@ -53,17 +88,17 @@ function Ads() {
                     <div className=' my-auto '>
                         <img className=' ' src={customers} alt="" width={3000} />
                     </div>
-                </div>
+                </div> */}
             </div>
         )
     }
     return (
         <div className=' py-5 bg-[#EBEBEB] px-5'>
-                <div className="fixed bottom-10 right-5 bg-green-500 w-[60px] h-[60px] rounded-full  ">
-                    <a href="https://wa.me/9947172630" target="_blank">
-                        <FaWhatsapp className="text-4xl text-white mx-auto mt-3 hover:text-green-600" />
-                    </a>
-                </div>
+            <div className="fixed bottom-10 right-5 bg-green-500 w-[60px] h-[60px] rounded-full  ">
+                <a href="https://wa.me/9947172630" target="_blank">
+                    <FaWhatsapp className="text-4xl text-white mx-auto mt-3 hover:text-green-600" />
+                </a>
+            </div>
             {image.map((items) => {
                 const base64String = btoa(
                     String.fromCharCode(...new Uint32Array((items.image.data.data)))
