@@ -4,6 +4,8 @@ import slideIcon from '../../TREKK TRAVEL ASSETSS/HOME PAGE/ICONS/ICON.png'
 import background from '../../TREKK TRAVEL ASSETSS/ABOUT US/MOBILE-BG.webp'
 import pcBg from '../../TREKK TRAVEL ASSETSS/ABOUT US/BG.webp'
 import pageTar from '../../TREKK TRAVEL ASSETSS/ABOUT US/page-tar.webp'
+import { AiOutlineCaretRight, AiOutlineCaretLeft, AiOutlineRight, AiOutlineLeft } from 'react-icons/ai'
+
 import 'typeface-poppins'
 import { FaArrowCircleDown, FaAngleDown } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
@@ -55,14 +57,14 @@ function Navbar() {
             <h1 onClick={contactNavigation} className='text-sm hover:underline hover:text-blue-800'>contact</h1>
           </div>
         </div>
-        <div className=' flex justify-between min-h-screen h-auto w-[1150px] pb-10 mx-auto my-auto'>
+        <div className=' flex flex-col min-h-screen h-auto w-[1150px] pb-10 mx-auto my-auto'>
           <div className=' my-auto w-[1150px]'>
-            <img className='' src={pageTar} alt="" width={500} />
+            <img className='mx-auto' src={pageTar} alt="" width={500} />
           </div>
-          <div className=' w-[1000px] h-auto px-5 py-5 font-medium bg-white my-auto rounded-xl'>
+          <div className=' w-[800px] h-auto px-20 py-10 text-center font-medium bg-white my-auto rounded-xl mx-auto'>
             <h1>Trekk & travel holidays is a professional team of passionate travel professionals. specializes in designing top end, budget oriented, travel products focusing on Cultural & Heritage, Adventure, Wildlife, Yoga & Ayurveda and Wellness, Beaches, Trains and Cruises, Incentive Weddings and Medical Tourism.
               We create personalised travel itineraries and offer the hassle-free holiday experience based on the guest's interests and requirements and choices. Ranging from luxury, heritage, and cultural holidays; adventure treks, cycling tours; incentive groups, events, Trekk & travel holidays is a one stop for all travel and holidaying needs.</h1>
-              <ul className=' mt-5 ml-5 list-disc'>
+            <ul className='  ml-5 list-disc text-left py-10  '>
               <li className=' my-2'>Highest Operating Standards</li>
               <li className=' my-2'>Friendly & well-informed Staff</li>
               <li className=' my-2'>Travel itinerary consultations</li>
@@ -71,42 +73,82 @@ function Navbar() {
               <li className=' my-2'>Competent in organising and bookings</li>
               <li className=' my-2'>Save time and effort</li>
               <li className=' my-2'>Well Recognised Tour Operator</li>
-              </ul>
-          </div>
-        </div>
-        {/* <div className=' w-3/4 h-80 flex justify-between pl-[350px]'>
-          <div className=' font-semibold text-[60px] my-auto'>Trekk & Travel</div>
-          <div className=' flex justify-evenly text-[50px] my-auto w-3/4'>
-            <h1 onClick={homeNavigation} className=' flex gap-5 hover:underline hover:text-blue-800'>Home </h1>
-            <h1 onClick={honeymoonNavigation} className=' flex gap-5 hover:underline hover:text-blue-800'>Honeymoon Package </h1>
-            <h1 onClick={familyNavigation} className=' flex gap-5 hover:underline hover:text-blue-800'>Family Package </h1>
-            <h1 onClick={holidayNavigation} className=' flex gap-5 hover:underline hover:text-blue-800'>Holiday Package </h1>
-            <h1 onClick={resortNavigation} className=' flex gap-5 hover:underline hover:text-blue-800'>Resort </h1>
-          </div>
-        </div>
-        <div className=' px-20 my-auto w-full h-screen flex justify-between'>
-          <div className=' my-auto h-auto w-2/5 '>
-            <img className=' w-full h-full object-cover' src={pageTar} alt="" />
-          </div>
-          <div className='w-2/5 h-auto  my-auto bg-[#F7F7F7] font-medium py-24 px-24 rounded-[80px] mr-[900px]'>
-            <h1 className=' text-[55px] w-4/4'>
-              Trekk & travel holidays is a professional team of passionate travel professionals. specializes in designing top end, budget oriented, travel products focusing on Cultural & Heritage, Adventure, Wildlife, Yoga & Ayurveda and Wellness, Beaches, Trains and Cruises, Incentive Weddings and Medical Tourism.
-              We create personalised travel itineraries and offer the hassle-free holiday experience based on the guest's interests and requirements and choices. Ranging from luxury, heritage, and cultural holidays; adventure treks, cycling tours; incentive groups, events, Trekk & travel holidays is a one stop for all travel and holidaying needs.
-            </h1>
-            <div className=' text-[55px] mt-[50px] ml-[50px] '>
-              <ul className=' list-disc'>
-                <li>Highest Operating Standards</li>
-                <li>Friendly & well-informed Staff</li>
-                <li>Travel itinerary consultations</li>
-                <li>Tailor made holiday packages</li>
-                <li>Private Tours for individuals and groups</li>
-                <li>Competent in organising and bookings</li>
-                <li>Save time and effort</li>
-                <li>Well Recognised Tour Operator</li>
-              </ul>
+            </ul>
+            <div className=' text-left flex flex-col gap-14  '>
+              <div>
+                <div className=' uppercase  mb-4 font-semibold text-orange-500'>medical tourism</div>
+                <h1 onClick={()=>navigate('/kerala')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>kerala</h1>
+                <h1 onClick={()=>navigate('/bangalore')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>bangalore</h1>
+                <h1 onClick={()=>navigate('/mumbai')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>mumbai</h1>
+                <h1 onClick={()=>navigate('/delhi')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>new delhi</h1>
+                <h1 onClick={()=>navigate('/vellore')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>vellore</h1>
+                <h1 onClick={()=>navigate('/jaipur')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>jaipur</h1>
+              </div>
+              <div className=' '>
+                <div className=' uppercase  mb-4 font-semibold text-orange-500'>TREATMENTS</div>
+                <h1 onClick={()=>navigate('/ayurveda')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>AYURVEDA</h1>
+                <h1 onClick={()=>navigate('/allopathy')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ALLOPATHIC</h1>
+                <h1 onClick={()=>navigate('/homeo')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HOMEOPATHIC</h1>
+                <h1 onClick={()=>navigate('/unani')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>UNANI</h1>
+                <h1 onClick={()=>navigate('/accu')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ACUPUNCTURE</h1>
+                <h1 onClick={()=>navigate('/nature')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>NATUROPATHY</h1>
+                <h1 onClick={()=>navigate('/fragrant')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Fragrant healing</h1>
+                <h1 onClick={()=>navigate('/contemplation')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Contemplation</h1>
+                <h1 onClick={()=>navigate('/weight')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Weight reduction</h1>
+                <h1 onClick={()=>navigate('/cri')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CHIROPRACTIC TREATMEN</h1>
+              </div>
+              <div className=' '>
+                <div className=' uppercase  mb-4 font-semibold text-orange-500'>CLINICAL SPECIALITIES</div>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Malignant growth CARE</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HEART CARE</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Dental Care</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Healthy skin</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>JOINT CARE</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIABETES CARE</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>LIVER TRANSPLANT</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>KIDNEY TRANSPLANT</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BACK PAIN</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Infertility </h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>IVF (In Vitro Fertilization)</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Speech Therapy</h1>
+              </div>
+              <div className=' '>
+                <div className=' uppercase  mb-4 font-semibold text-orange-500'>MICE</div>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>MEETINGS</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>INCENTIVES</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CONFERENCES</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>EXHIBITIONS</h1>
+              </div>
+              <div className=' '>
+                <div className=' uppercase  mb-4 font-semibold text-orange-500'>Adventure N’ Leisure Activities </div>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRUMMING</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYBOARDING</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRAGON BOATING</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GROUP CANOE </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GOLF </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEA KAYAKING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIRT BIKING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>OFF ROAD DRIVING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SWIM WITH DOLPHINS </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>RALLY CAR DRIVING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>QUAD BIKE RIDING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIVE WITH SHARKS </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEGWAY TOURS </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SKY DIVING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>PAINTBALL </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BUNGEE JUMPING  </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYING FOX </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CLAY PIGEON SHOOTING </h1>
+              </div>
+              <div className=' '>
+              <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>gala dining </h1>
+
+              </div>
+              
             </div>
           </div>
-        </div> */}
+
+        </div>
       </div>
     )
   }
@@ -149,9 +191,9 @@ function Navbar() {
       <div className=''>
         <img src={pageTar} alt="" />
       </div>
-      <div className=' px-5'>
+      <div className=' px-2'>
 
-        <div className=' text-md w-full mx-auto px-5 py-5 font-medium  rounded-2xl bg-[#F7F7F7] h-auto mt-10'>
+        <div className='  w-full mx-auto px-5 py-5 font-medium  rounded-2xl bg-[#F7F7F7] h-auto mt-10'>
           <h1 className='   '>
             Trekk & travel holidays is a professional team of passionate travel professionals. specializes in designing top end, budget oriented, travel products focusing on Cultural & Heritage, Adventure, Wildlife, Yoga & Ayurveda and Wellness, Beaches, Trains and Cruises, Incentive Weddings and Medical Tourism.
             We create personalised travel itineraries and offer the hassle-free holiday experience based on the guest's interests and requirements and choices. Ranging from luxury, heritage, and cultural holidays; adventure treks, cycling tours; incentive groups, events, Trekk & travel holidays is a one stop for all travel and holidaying needs.
@@ -168,6 +210,78 @@ function Navbar() {
               <li className=' my-3'>Well Recognised Tour Operator</li>
             </ul>
           </div>
+          <div className=' text-left flex flex-col gap-14  my-10 '>
+              <div>
+                <div className=' uppercase  mb-4 font-semibold text-orange-500'>medical tourism</div>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>kerala</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>banglore</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>mumbai</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>new delhi</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>vellore</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>jaipur</h1>
+              </div>
+              <div className=' '>
+                <div className=' uppercase  mb-4 font-semibold text-orange-500'>TREATMENTS</div>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>AYURVEDA</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ALLOPATHIC</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HOMEOPATHIC</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>UNANI</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ACUPUNCTURE</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>NATUROPATHY</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Fragrant healing</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Contemplation</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Weight reduction</h1>
+                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CHIROPRACTIC TREATMEN</h1>
+              </div>
+              <div className=' '>
+                <div className=' uppercase  mb-4 font-semibold text-orange-500'>CLINICAL SPECIALITIES</div>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Malignant growth CARE</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HEART CARE</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Dental Care</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Healthy skin</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>JOINT CARE</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIABETES CARE</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>LIVER TRANSPLANT</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>KIDNEY TRANSPLANT</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BACK PAIN</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Infertility </h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>IVF (In Vitro Fertilization)</h1>
+                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Speech Therapy</h1>
+              </div>
+              <div className=' '>
+                <div className=' uppercase  mb-4 font-semibold text-orange-500'>MICE</div>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>MEETINGS</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>INCENTIVES</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CONFERENCES</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>EXHIBITIONS</h1>
+              </div>
+              <div className=' '>
+                <div className=' uppercase  mb-4 font-semibold text-orange-500'>Adventure N’ Leisure Activities </div>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRUMMING</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYBOARDING</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRAGON BOATING</h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GROUP CANOE </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GOLF </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEA KAYAKING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIRT BIKING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>OFF ROAD DRIVING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SWIM WITH DOLPHINS </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>RALLY CAR DRIVING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>QUAD BIKE RIDING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIVE WITH SHARKS </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEGWAY TOURS </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SKY DIVING </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>PAINTBALL </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BUNGEE JUMPING  </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYING FOX </h1>
+                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CLAY PIGEON SHOOTING </h1>
+              </div>
+              <div className=' '>
+              <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>gala dining </h1>
+
+              </div>
+              
+            </div>
         </div>
       </div>
     </div>

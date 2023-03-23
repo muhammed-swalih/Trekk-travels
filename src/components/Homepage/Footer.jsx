@@ -42,7 +42,7 @@ function Footer() {
                         <div className=' flex flex-col '>
                             <div className=' flex ml-[-20px]'>
                                 <img src={logo} alt="" width={80} />
-                                <h1 className=' my-auto font-semibold text-xl text-white'>Trekk & Trevel</h1>
+                                <h1 className=' my-auto font-semibold text-xl text-white'>Trekk & Travel</h1>
                                 <h1 className=' uppercase my-auto text-xs mt-16 ml-[-55px] text-white'>holidays</h1>
                             </div>
                             <div className=' flex justify-between w-1/4 gap-4'>
@@ -99,7 +99,7 @@ function Footer() {
         <div className=' w-full bg-[#232323] h-auto py-5 text-white'>
             <div className=' flex inline-flex items-center pl-7'>
                 <img src={logo} alt="" width={50} />
-                <h1 className=' font-bold'>Trekk & Travels</h1>
+                <h1 className=' font-bold'>Trekk & Travel</h1>
             </div>
             <div className=' flex flex-col items-start ml-10 gap-5'>
                 <div className=' flex gap-2'>

@@ -76,7 +76,7 @@ function Experience() {
                 </div>
                 <div className=' flex inline-flex w-full justify-evenly pb-10'>
                     <div className=' '>
-                        <h1 className='font-bold text-orange-500 text-4xl'>10</h1>
+                        <h1 className='font-bold text-orange-500 text-4xl'>6</h1>
                         <h1 className=' text-xs w-10 mx-auto text-gray-600'>Years Experience</h1>
                     </div>
                     <div className=' '>

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../Homepage/Footer'
 import { useMediaQuery } from '@react-hook/media-query'
 import Navbar from '../Homepage/Navbar'
 
 function PrivacyPolicy() {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[])
     const isMediumScreen = useMediaQuery("(min-width : 1024px)")
     if (isMediumScreen) {
         return (

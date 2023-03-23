@@ -29,6 +29,22 @@ import OotyDetails from './components/ResortDetailedPage/OotyDetails';
 import TermsAndConditions from './components/TermsAndConditions/TermsAndConditions';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import Cancellation from './components/Cancellation/Cancellation';
+import Kerala from './components/contents/medicalTourism/Kerala';
+import Banglore from './components/contents/medicalTourism/Banglore';
+import Mumbai from './components/contents/medicalTourism/Mumbai';
+import Delhi from './components/contents/medicalTourism/Delhi';
+import Vellore from './components/contents/medicalTourism/Vellore';
+import Jaipur from './components/contents/medicalTourism/Jaipur';
+import Ayurveda from './components/contents/treatments/Ayurveda';
+import Allopathic from './components/contents/treatments/Allopathic';
+import Homeo from './components/contents/treatments/Homeo copy';
+import Unani from './components/contents/treatments/Unani';
+import Acupuncture from './components/contents/treatments/Acupuncture';
+import Nature from './components/contents/treatments/Naturopathy';
+import Fragrant from './components/contents/treatments/Fragrant';
+import Contemplation from './components/contents/treatments/Contemplation';
+import Weight from './components/contents/treatments/Weight';
+import Chiropractic from './components/contents/treatments/Chiropractic';
 
 function App() {
   return (
@@ -66,6 +82,28 @@ function App() {
         <Route  path="/coorgresort/:id" element={<CoorgDetails/>} />
         <Route  path="/kodaikkanalresort/:id" element={<KodaikkanalDetails/>} />
         <Route  path="/ootyresort/:id" element={<OotyDetails/>} />
+
+        //medical tourism contents
+        <Route  path="/kerala" element={<Kerala/>} />
+        <Route  path="/bangalore" element={<Banglore/>} />
+        <Route  path="/mumbai" element={<Mumbai/>} />
+        <Route  path="/delhi" element={<Delhi/>} />
+        <Route  path="/vellore" element={<Vellore/>} />
+        <Route  path="/jaipur" element={<Jaipur/>} />
+
+        //treatments contents
+        <Route  path="/ayurveda" element={<Ayurveda/>} />
+        <Route  path="/allopathy" element={<Allopathic/>} />
+        <Route  path="/homeo" element={<Homeo/>} />
+        <Route  path="/unani" element={<Unani/>} />
+        <Route  path="/accu" element={<Acupuncture/>} />
+        <Route  path="/nature" element={<Nature/>} />
+        <Route  path="/fragrant" element={<Fragrant/>} />
+        <Route  path="/contemplation" element={<Contemplation/>} />
+        <Route  path="/weight" element={<Weight/>} />
+        <Route  path="/cri" element={<Chiropractic/>} />
+
+
 
       </Routes>
 
