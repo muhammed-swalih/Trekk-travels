@@ -9,28 +9,29 @@ import { FaArrowCircleDown, FaAngleDown } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
 import { useMediaQuery } from '@react-hook/media-query'
 function Navbar() {
-  const isMediumScreen = useMediaQuery("(min-width : 640px)")
+  const isTablet = useMediaQuery('(min-width : 640px)and(max-width: 1024px)');
+  const isMediumScreen = useMediaQuery("(min-width : 1024px)")
   const navigate = useNavigate()
   const honeymoonNavigation = () => {
-    navigate('/https://trekkandtravel.onrender.com/honeymoonpackage')
+    navigate('/honeymoonpackage')
   }
   const familyNavigation = () => {
-    navigate('/https://trekkandtravel.onrender.com/familypackage')
+    navigate('/familypackage')
   }
   const holidayNavigation = () => {
-    navigate('/https://trekkandtravel.onrender.com/holidaypackage')
+    navigate('/holidaypackage')
   }
   const aboutUsNavigation = () => {
-    navigate('/https://trekkandtravel.onrender.com/about')
+    navigate('/about')
   }
   const contactNavigation = () => {
-    navigate('/https://trekkandtravel.onrender.com/contact')
+    navigate('/contact')
   }
   const homeNavigation = () => {
     navigate('/')
   }
   const resortNavigation = () => {
-    navigate('/https://trekkandtravel.onrender.com/resorts')
+    navigate('/resorts')
   }
   const [menu, setMenu] = useState(false)
   const toggle = () => {
@@ -39,7 +40,7 @@ function Navbar() {
   if (isMediumScreen) {
     return (
       <div className=' w-full min-h-screen h-auto bg-contain' style={{ backgroundImage: `url(${pcBg})` }}>
-        <div className=' w-5/6 h-auto  flex justify-between mx-auto'>
+        <div className=' w-[1150px] h-auto  flex justify-between mx-auto'>
           <div className=' flex gap-2'>
             <img className=' ' src={logo} alt="" width={60} />
             <h1 className=' my-auto font-semibold text-lg'>Trekk & travel</h1>
@@ -54,11 +55,11 @@ function Navbar() {
             <h1 onClick={contactNavigation} className='text-sm hover:underline hover:text-blue-800'>contact</h1>
           </div>
         </div>
-        <div className=' flex justify-between h-screen w-4/5 mx-auto my-auto'>
-          <div className=' my-auto w-3/6'>
-            <img className='' src={pageTar} alt="" />
+        <div className=' flex justify-between min-h-screen h-auto w-[1150px] pb-10 mx-auto my-auto'>
+          <div className=' my-auto w-[1150px]'>
+            <img className='' src={pageTar} alt="" width={500} />
           </div>
-          <div className=' w-3/6 h-auto px-5 py-5 font-medium bg-white my-auto rounded-xl'>
+          <div className=' w-[1000px] h-auto px-5 py-5 font-medium bg-white my-auto rounded-xl'>
             <h1>Trekk & travel holidays is a professional team of passionate travel professionals. specializes in designing top end, budget oriented, travel products focusing on Cultural & Heritage, Adventure, Wildlife, Yoga & Ayurveda and Wellness, Beaches, Trains and Cruises, Incentive Weddings and Medical Tourism.
               We create personalised travel itineraries and offer the hassle-free holiday experience based on the guest's interests and requirements and choices. Ranging from luxury, heritage, and cultural holidays; adventure treks, cycling tours; incentive groups, events, Trekk & travel holidays is a one stop for all travel and holidaying needs.</h1>
               <ul className=' mt-5 ml-5 list-disc'>

@@ -8,7 +8,9 @@ import { useNavigate } from 'react-router-dom'
 import {BiRupee} from 'react-icons/bi'
 function PackageList() {
     const navigate = useNavigate();
-    const isMediumScreen = useMediaQuery('(min-width : 640px)')
+    const isTablet = useMediaQuery('(min-width : 640px)and(max-width: 1024px)');
+
+    const isMediumScreen = useMediaQuery('(min-width : 1024px)')
     const [image, setImage] = useState([])
     const fetchHoneyMoonPackage = async () => {
         const response = await axios.get('https://trekkandtravel.onrender.com/packages/family');
@@ -24,7 +26,7 @@ function PackageList() {
     if (isMediumScreen) {
         return (
             <div className=' w-full min-h-screen h-auto bg-[#EBEBEB] pt-28 '>
-                <div className=' w-3/5 h-auto mx-auto'>
+                <div className=' w-[1150px] h-auto mx-auto'>
                     <img src={familyPaper} alt="" />
                 </div>
                 <div className=' w-[1100px] mx-auto h-auto flex flex-wrap justify-around gap-14 rounded-3xl py-10'>

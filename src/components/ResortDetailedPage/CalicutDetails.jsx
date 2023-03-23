@@ -36,13 +36,15 @@ function CalicutDetails() {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
-    const isMediumScreen = useMediaQuery('(min-width : 640px)')
+    const isMediumScreen = useMediaQuery('(min-width : 1024px)')
+    const isTablet = useMediaQuery('(min-width : 640px)and(max-width: 1024px)');
+
     if (isMediumScreen) {
         return (
             <div className=' w-full min-h-screen h-auto'>
                 <Navbar/>
                 <div className=' w-full min-h-screen h-auto bg-[#EBEBEB] pt-32 pb-10'>
-                <div className=' w-4/6 h-auto mx-auto flex justify-between'>
+                <div className=' w-[1150px] h-auto mx-auto flex justify-between'>
                     <div className=' w-[500px] h-[400px]  rounded-2xl'>
                        {base && <img className='rounded-2xl w-full h-full object-cover' src={`data:image/jpeg;base64,${base}`} alt="" />} 
                     </div>
@@ -56,7 +58,7 @@ function CalicutDetails() {
                         </a>
                     </div>
                 </div>
-                <div className='px-5 py-5 mx-auto mt-5 w-4/6 bg-white h-auto rounded-2xl shadow-lg'>
+                <div className='px-5 py-5 mx-auto mt-5 w-[1150px] bg-white h-auto rounded-2xl shadow-lg'>
                 {details ? details.description : "none"}
                 </div>
             </div>

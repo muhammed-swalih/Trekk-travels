@@ -33,11 +33,13 @@ function PackageDetails() {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
-    const isMediumScreen = useMediaQuery('(min-width : 640px)')
+    const isTablet = useMediaQuery('(min-width : 640px)and(max-width: 1024px)');
+
+    const isMediumScreen = useMediaQuery('(min-width : 1024px)')
     if (isMediumScreen) {
         return (
             <div className=' w-full min-h-screen h-auto bg-[#EBEBEB] pt-32 pb-10'>
-            <div className=' w-4/6 h-auto mx-auto flex justify-between'>
+            <div className=' w-[1150px] h-auto mx-auto flex justify-between'>
                 <div className=' w-[500px] h-[400px]  rounded-2xl'>
                    {base && <img className='rounded-2xl w-full h-full object-cover' src={`data:image/jpeg;base64,${base}`} alt="" />} 
                 </div>
@@ -52,7 +54,7 @@ function PackageDetails() {
                         </a>
                 </div>
             </div>
-            <div className='mx-auto mt-10 rounded-2xl shadow-lg bg-white w-4/6 h-auto px-4 py-4'>
+            <div className='mx-auto mt-10 rounded-2xl shadow-lg bg-white w-[1150px] h-auto px-4 py-4'>
                 <h1 className=' font-semibold text-lg'>Highlights</h1>
                 <ul className=' list-disc ml-10 mt-5'>
                 {details && details.highlight1 && <li>{details ? details.highlight1 : "nothing"}</li>}
@@ -63,7 +65,7 @@ function PackageDetails() {
                     {details && details.highlight6 && <li>{details ? details.highlight6 : "nothing"}</li>}
                 </ul>
             </div>
-            <div className='px-5 py-5 mx-auto mt-5 w-4/6 bg-white h-auto rounded-2xl shadow-lg'>
+            <div className='px-5 py-5 mx-auto mt-5 w-[1150px] bg-white h-auto rounded-2xl shadow-lg'>
             {details ? details.description : "none"}
             </div>
         </div>

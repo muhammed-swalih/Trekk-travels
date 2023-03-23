@@ -5,12 +5,14 @@ import bag from '../../TREKK TRAVEL ASSETSS/HOME PAGE/EMOJIS/luggage.webp'
 import pass from '../../TREKK TRAVEL ASSETSS/HOME PAGE/EMOJIS/bording-pass.webp'
 import { useMediaQuery } from '@react-hook/media-query'
 function Service() {
-  const isMediumScreen = useMediaQuery("(min-width : 640px)")
+  const isMediumScreen = useMediaQuery("(min-width : 1024px)")
+  const isTablet = useMediaQuery('(min-width : 640px)and(max-width: 1024px)');
+
 
   if (isMediumScreen) {
     return (
       <div className=' w-full h-auto py-5 bg-[#EBEBEB] '>
-        <div className='w-4/5 min-h-10 h-auto  mx-auto flex justify-between py-10'>
+        <div className='w-[1150px] min-h-10 h-auto  mx-auto flex justify-between py-10'>
             <div className=' flex flex-col '>
                 <h1 className=' uppercase font-semibold text-orange-500'>what we serve</h1>
                 <h1 className=' text-2xl font-semibold w-40 flex gap-1'>Top Values</h1>

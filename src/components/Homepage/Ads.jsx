@@ -7,7 +7,9 @@ import staring from '../../TREKK TRAVEL ASSETSS/HOME PAGE/EMOJIS/star.webp'
 import star from '../../TREKK TRAVEL ASSETSS/HOME PAGE/EMOJIS/star-eye-emoji-icons.webp'
 import { useMediaQuery } from '@react-hook/media-query';
 function Ads() {
-    const isMediumScreen = useMediaQuery("(min-width : 640px)")
+    const isMediumScreen = useMediaQuery("(min-width : 1024px)")
+    const isTablet = useMediaQuery('(min-width : 640px)and(max-width: 1024px)');
+
     const [image, setImage] = useState([])
     const fetchAds = async () => {
         const response = await axios.get('https://trekkandtravel.onrender.com/packages/getAd');
@@ -30,12 +32,12 @@ function Ads() {
                     )
                     return (
 
-                        <div className='  w-3/5 h-60 rounded-3xl bg-black mx-auto'>
+                        <div className='  w-[800px] h-60 rounded-3xl bg-black mx-auto'>
                             <img className=' w-full h-full object-cover rounded-3xl' src={`data:image/jpeg;base64,${base64String}`} alt="" />
                         </div>
                     )
                 })}
-                <div className=' mt-40 flex justify-between w-4/5 mx-auto'>
+                <div className=' mt-40 flex justify-between w-[1150px] mx-auto'>
                     <div className=' flex flex-col gap-2'>
                         <h1 className=' text-lg uppercase text-orange-500 font-semibold'>what they say</h1>
                         <h1 className=' text-5xl font-semibold w-[500px]'>What Our Customer </h1>
@@ -54,41 +56,6 @@ function Ads() {
                         <img src={customers} alt="" />
                     </div>
                 </div>
-                {/* <div className="fixed bottom-[200px] w-[200px] h-[200px] rounded-full right-[100px] bg-green-500">
-                    <a href="https://wa.me/9947172630" target="_blank">
-                        <FaWhatsapp className="text-[130px] mx-auto mt-9  text-white hover:text-green-600" />
-                    </a>
-                </div>
-                {image.map((items) => {
-                    const base64String = btoa(
-                        String.fromCharCode(...new Uint32Array((items.image.data.data)))
-                    )
-                    return (
-
-                        <div className=' w-2/4 mx-auto rounded-3xl h-[700px] bg-black'>
-                            <img className='rounded-3xl w-full h-full  object-cover mx-auto' src={`data:image/jpeg;base64,${base64String}`} alt="" />
-                        </div>
-                    )
-                })}
-                <div className=' my-[500px] w-5/6 flex justify-between mx-auto'>
-                    <div className=''>
-                        <h1 className=' my-10 text-orange-500 text-[65px] font-semibold uppercase'>what they say </h1>
-                        <h1 className='  text-[150px] font-semibold'>What Our Customer </h1>
-                        <h1 className=' text-[150px] font-semibold flex gap-2'>Say About Us <span><img className=' mt-3' src={star} alt="" width={160} /></span></h1>
-                        <h1 className=' my-10 text-[65px] text-gray-500 w-3/4'>“I am a traveler and trekk&travel helps me a lot in finding interesting tourist destinations and of course the price offered is very worth it.”</h1>
-                        <h1 className=' text-[65px] font-semibold'>Muhammed Swalih</h1>
-                        <div className=' flex justify-between w-1/5 '>
-                            <img src={staring} alt="" width={80} />
-                            <img src={staring} alt="" width={80} />
-                            <img src={staring} alt="" width={80} />
-                            <img src={staring} alt="" width={80} />
-                            <img src={staring} alt="" width={80} />
-                        </div>
-                    </div>
-                    <div className=' my-auto '>
-                        <img className=' ' src={customers} alt="" width={3000} />
-                    </div>
-                </div> */}
             </div>
         )
     }

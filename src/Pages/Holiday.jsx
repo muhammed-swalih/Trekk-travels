@@ -1,5 +1,6 @@
 import React from 'react'
 import PackageList from '../components/HolidayPage/PackageList'
+import Footer from '../components/Homepage/Footer'
 import Navbar from '../components/Homepage/Navbar'
 
 function Holiday() {
@@ -7,6 +8,7 @@ function Holiday() {
     <div>
         <Navbar/>
         <PackageList/>
+        <Footer/>
     </div>
   )
 }

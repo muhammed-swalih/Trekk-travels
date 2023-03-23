@@ -6,7 +6,7 @@ function About() {
   return (
     <div>
         <Navbar/>
-        
+        <Footer/>
     </div>
   )
 }

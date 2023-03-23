@@ -7,21 +7,23 @@ import value from '../../TREKK TRAVEL ASSETSS/HOME PAGE/ICONS/value-for-money-ic
 import save from '../../TREKK TRAVEL ASSETSS/HOME PAGE/ICONS/save-money-icon.webp'
 import { useMediaQuery } from '@react-hook/media-query'
 function Experience() {
-    const isMediumScreen = useMediaQuery("(min-width : 640px)")
+    const isMediumScreen = useMediaQuery("(min-width : 1024px)")
+    const isTablet = useMediaQuery('(min-width : 640px)and(max-width: 1024px)');
+
     if (isMediumScreen) {
         return (
             <div className='h-auto w-full bg-[#EBEBEB] py-5'>
-                <div className=' w-4/5 font-semibold h-auto flex justify-between mx-auto'>
-                    <div>
-                        <img src={bag} alt="" width={1500} />
+                <div className=' w-[1200px] font-semibold h-auto flex justify-between mx-auto'>
+                    <div >
+                        <img className=' mx-auto' src={bag} alt="" width={1500} />
                     </div>
-                    <div className=' flex flex-col my-auto'>
+                    <div className=' flex flex-col my-auto mx-auto'>
                         <h1 className=' text-orange-500 text-lg  uppercase'>our expireince</h1>
                         <h1 className=' uppercase w-[520px] text-[40px]'>package benifits to our customer.</h1>
                         <h1 className=' w-[520px] text-gray-500'>Since we first opened we have always prioritized the convenience of our users by providing low prices and with a easy process.</h1>
                         <div className=' flex justify-between mt-5'>
                             <div className=' flex flex-col'>
-                                <h1 className=' text-orange-500 text-5xl'>10</h1>
+                                <h1 className=' text-orange-500 text-5xl'>6</h1>
                                 <h1 className=' w-28 text-gray-500'>Years Experience</h1>
 
                             </div>
@@ -36,7 +38,7 @@ function Experience() {
                         </div>
                     </div>
                 </div>
-                <div className=' mx-auto mt-5 w-2/4 flex justify-between'>
+                <div className=' mx-auto mt-5 w-[800px] flex justify-between'>
                     <div className=' flex flex-col relative bg-white w-40 h-[150px] rounded-3xl border border-1 shadow-lg '>
                         <img className=' bg-white rounded-3xl mx-auto my-auto' src={value} alt="" width={100} />
                         <h1 className=' absolute px-3 py-3 font-semibold text-xs top-[110px] left-2 uppercase '>value for money</h1>
@@ -61,7 +63,7 @@ function Experience() {
     return (
         <div className=' w-full h-auto bg-[#EBEBEB] py-2'>
             <div className=' w-auto h-auto mx-auto'>
-                <img className='' src={bag} alt="" />
+                <img  className=' mx-auto' src={bag} alt="" />
             </div>
             <div className=' text-center mx-auto w-full h-auto'>
                 <h1 className=' text-orange-500 font-bold uppercase pb-1'>our experience</h1>

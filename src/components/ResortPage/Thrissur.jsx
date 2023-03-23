@@ -28,11 +28,13 @@ function ThrissurResorts() {
     useEffect(() => {
         fetchHoneyMoonPackage();
     }, [])
-    const isMediumScreen = useMediaQuery('(min-width : 640px)')
+    const isMediumScreen = useMediaQuery('(min-width : 1024px)')
+    const isTablet = useMediaQuery('(min-width : 640px)and(max-width: 1024px)');
+
     if (isMediumScreen) {
         return (
-            <div className=' pb-14 w-4/4 h-auto bg-[#EBEBEB]  '>
-                <div className=' flex w-4/5 mx-auto  flex-col gap-3'>
+            <div className=' pb-14 w-full h-auto bg-[#EBEBEB]  '>
+                <div className=' flex w-[1150px] mx-auto  flex-col gap-3'>
                     <h1 className=' uppercase font-semibold text-orange-500'>top destinations</h1>
                     <div className='flex justify-between'>
                         <h1 className=' font-semibold text-4xl flex gap-2'>Best Thrissur Resort</h1>

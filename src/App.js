@@ -26,6 +26,9 @@ import KasargodDetails from './components/ResortDetailedPage/KasargodDetails';
 import CoorgDetails from './components/ResortDetailedPage/CoorgDetails';
 import KodaikkanalDetails from './components/ResortDetailedPage/KodaikkanalDetails';
 import OotyDetails from './components/ResortDetailedPage/OotyDetails';
+import TermsAndConditions from './components/TermsAndConditions/TermsAndConditions';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
+import Cancellation from './components/Cancellation/Cancellation';
 
 function App() {
   return (
@@ -41,6 +44,9 @@ function App() {
         <Route  path="/familydetails/:id" element={<FamilyDetails/>} />
         <Route  path="/holidaydetails/:id" element={<HolidayDetails/>} />
         <Route  path="/resorts" element={<Resorts/>} />
+        <Route  path="/termsandconditions" element={<TermsAndConditions/>} />
+        <Route  path="/privacypolicy" element={<PrivacyPolicy/>} />
+        <Route  path="/cancellation" element={<Cancellation/>} />
         
         //resorts routes
 
