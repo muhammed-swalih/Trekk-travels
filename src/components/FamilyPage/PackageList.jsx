@@ -19,6 +19,7 @@ function PackageList() {
     }
     useEffect(() => {
         fetchHoneyMoonPackage();
+        window.scrollTo(0, 0);
     }, [])
     const navigateFamilyDetails = (id)=>{
         navigate(`/familydetails/${id}`)

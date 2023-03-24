@@ -54,7 +54,7 @@ function Kerala() {
     }
     return (
         <div className=' w-full h-full min-h-screen   '>
-
+<Navbar />
             <div className=' text-2xl mt-10'>
                 <h1 className=' uppercase text-center font-medium text-orange-500'>kerala</h1>
             </div>

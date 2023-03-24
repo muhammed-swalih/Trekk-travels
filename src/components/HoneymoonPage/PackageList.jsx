@@ -18,6 +18,7 @@ function PackageList() {
     }
     useEffect(() => {
         fetchHoneyMoonPackage();
+        window.scrollTo(0, 0);
     }, [])
 
     const NavigateDetailsPage = (id) => {

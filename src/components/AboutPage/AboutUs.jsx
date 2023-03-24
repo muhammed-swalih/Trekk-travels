@@ -77,74 +77,74 @@ function Navbar() {
             <div className=' text-left flex flex-col gap-14  '>
               <div>
                 <div className=' uppercase  mb-4 font-semibold text-orange-500'>medical tourism</div>
-                <h1 onClick={()=>navigate('/kerala')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>kerala</h1>
-                <h1 onClick={()=>navigate('/bangalore')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>bangalore</h1>
-                <h1 onClick={()=>navigate('/mumbai')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>mumbai</h1>
-                <h1 onClick={()=>navigate('/delhi')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>new delhi</h1>
-                <h1 onClick={()=>navigate('/vellore')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>vellore</h1>
-                <h1 onClick={()=>navigate('/jaipur')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>jaipur</h1>
+                <h1 onClick={() => navigate('/kerala')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>kerala</h1>
+                <h1 onClick={() => navigate('/bangalore')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>bangalore</h1>
+                <h1 onClick={() => navigate('/mumbai')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>mumbai</h1>
+                <h1 onClick={() => navigate('/delhi')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>new delhi</h1>
+                <h1 onClick={() => navigate('/vellore')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>vellore</h1>
+                <h1 onClick={() => navigate('/jaipur')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>jaipur</h1>
               </div>
               <div className=' '>
                 <div className=' uppercase  mb-4 font-semibold text-orange-500'>TREATMENTS</div>
-                <h1 onClick={()=>navigate('/ayurveda')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>AYURVEDA</h1>
-                <h1 onClick={()=>navigate('/allopathy')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ALLOPATHIC</h1>
-                <h1 onClick={()=>navigate('/homeo')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HOMEOPATHIC</h1>
-                <h1 onClick={()=>navigate('/unani')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>UNANI</h1>
-                <h1 onClick={()=>navigate('/accu')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ACUPUNCTURE</h1>
-                <h1 onClick={()=>navigate('/nature')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>NATUROPATHY</h1>
-                <h1 onClick={()=>navigate('/fragrant')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Fragrant healing</h1>
-                <h1 onClick={()=>navigate('/contemplation')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Contemplation</h1>
-                <h1 onClick={()=>navigate('/weight')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Weight reduction</h1>
-                <h1 onClick={()=>navigate('/cri')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CHIROPRACTIC TREATMEN</h1>
+                <h1 onClick={() => navigate('/ayurveda')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>AYURVEDA</h1>
+                <h1 onClick={() => navigate('/allopathy')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ALLOPATHIC</h1>
+                <h1 onClick={() => navigate('/homeo')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HOMEOPATHIC</h1>
+                <h1 onClick={() => navigate('/unani')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>UNANI</h1>
+                <h1 onClick={() => navigate('/accu')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ACUPUNCTURE</h1>
+                <h1 onClick={() => navigate('/nature')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>NATUROPATHY</h1>
+                <h1 onClick={() => navigate('/fragrant')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Fragrant healing</h1>
+                <h1 onClick={() => navigate('/contemplation')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Contemplation</h1>
+                <h1 onClick={() => navigate('/weight')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Weight reduction</h1>
+                <h1 onClick={() => navigate('/cri')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CHIROPRACTIC TREATMEN</h1>
               </div>
               <div className=' '>
                 <div className=' uppercase  mb-4 font-semibold text-orange-500'>CLINICAL SPECIALITIES</div>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Malignant growth CARE</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HEART CARE</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Dental Care</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Healthy skin</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>JOINT CARE</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIABETES CARE</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>LIVER TRANSPLANT</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>KIDNEY TRANSPLANT</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BACK PAIN</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Infertility </h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>IVF (In Vitro Fertilization)</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Speech Therapy</h1>
+                <h1 onClick={() => navigate('/maligant')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Malignant growth CARE</h1>
+                <h1 onClick={() => navigate('/heart')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HEART CARE</h1>
+                <h1 onClick={() => navigate('/dental')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Dental Care</h1>
+                <h1 onClick={() => navigate('/skin')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Healthy skin</h1>
+                <h1 onClick={() => navigate('/joint')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>JOINT CARE</h1>
+                <h1 onClick={() => navigate('/diabetes')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIABETES CARE</h1>
+                <h1 onClick={() => navigate('/liver')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>LIVER TRANSPLANT</h1>
+                <h1 onClick={() => navigate('/kidney')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>KIDNEY TRANSPLANT</h1>
+                <h1 onClick={() => navigate('/backpain')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BACK PAIN</h1>
+                <h1 onClick={() => navigate('/infe')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Infertility </h1>
+                <h1 onClick={() => navigate('/ivf')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>IVF (In Vitro Fertilization)</h1>
+                <h1 onClick={() => navigate('/speech')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Speech Therapy</h1>
               </div>
               <div className=' '>
                 <div className=' uppercase  mb-4 font-semibold text-orange-500'>MICE</div>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>MEETINGS</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>INCENTIVES</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CONFERENCES</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>EXHIBITIONS</h1>
+                <h1 onClick={() => navigate('/meetings')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>MEETINGS</h1>
+                <h1 onClick={() => navigate('/incentives')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>INCENTIVES</h1>
+                <h1 onClick={() => navigate('/conference')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CONFERENCES</h1>
+                <h1 onClick={() => navigate('/exhibitions')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>EXHIBITIONS</h1>
               </div>
               <div className=' '>
                 <div className=' uppercase  mb-4 font-semibold text-orange-500'>Adventure N’ Leisure Activities </div>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRUMMING</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYBOARDING</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRAGON BOATING</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GROUP CANOE </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GOLF </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEA KAYAKING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIRT BIKING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>OFF ROAD DRIVING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SWIM WITH DOLPHINS </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>RALLY CAR DRIVING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>QUAD BIKE RIDING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIVE WITH SHARKS </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEGWAY TOURS </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SKY DIVING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>PAINTBALL </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BUNGEE JUMPING  </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYING FOX </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CLAY PIGEON SHOOTING </h1>
+                <h1 onClick={()=>navigate('/drumming')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRUMMING</h1>
+                <h1 onClick={()=>navigate('/flyboard')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYBOARDING</h1>
+                <h1 onClick={()=>navigate('/dragon')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRAGON BOATING</h1>
+                <h1 onClick={()=>navigate('/group')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GROUP CANOE </h1>
+                <h1 onClick={()=>navigate('/golf')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GOLF </h1>
+                <h1 onClick={()=>navigate('/sea')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEA KAYAKING </h1>
+                <h1 onClick={()=>navigate('/dirt')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIRT BIKING </h1>
+                <h1 onClick={()=>navigate('/off')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>OFF ROAD DRIVING </h1>
+                <h1 onClick={()=>navigate('/swim')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SWIM WITH DOLPHINS </h1>
+                <h1 onClick={()=>navigate('/rally')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>RALLY CAR DRIVING </h1>
+                <h1 onClick={()=>navigate('/quad')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>QUAD BIKE RIDING </h1>
+                <h1 onClick={()=>navigate('/dive')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIVE WITH SHARKS </h1>
+                <h1 onClick={()=>navigate('/sea')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEGWAY TOURS </h1>
+                <h1 onClick={()=>navigate('/sky')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SKY DIVING </h1>
+                <h1 onClick={()=>navigate('/paint')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>PAINTBALL </h1>
+                <h1 onClick={()=>navigate('/bungee')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BUNGEE JUMPING  </h1>
+                <h1 onClick={()=>navigate('/flying')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYING FOX </h1>
+                <h1 onClick={()=>navigate('/clay')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CLAY PIGEON SHOOTING </h1>
               </div>
               <div className=' '>
-              <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>gala dining </h1>
+                <h1 onClick={()=>navigate('/gala')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>gala dining </h1>
 
               </div>
-              
+
             </div>
           </div>
 
@@ -211,77 +211,77 @@ function Navbar() {
             </ul>
           </div>
           <div className=' text-left flex flex-col gap-14  my-10 '>
-              <div>
-                <div className=' uppercase  mb-4 font-semibold text-orange-500'>medical tourism</div>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>kerala</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>banglore</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>mumbai</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>new delhi</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>vellore</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>jaipur</h1>
-              </div>
-              <div className=' '>
-                <div className=' uppercase  mb-4 font-semibold text-orange-500'>TREATMENTS</div>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>AYURVEDA</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ALLOPATHIC</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HOMEOPATHIC</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>UNANI</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ACUPUNCTURE</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>NATUROPATHY</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Fragrant healing</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Contemplation</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Weight reduction</h1>
-                <h1 className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CHIROPRACTIC TREATMEN</h1>
-              </div>
-              <div className=' '>
-                <div className=' uppercase  mb-4 font-semibold text-orange-500'>CLINICAL SPECIALITIES</div>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Malignant growth CARE</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HEART CARE</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Dental Care</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Healthy skin</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>JOINT CARE</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIABETES CARE</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>LIVER TRANSPLANT</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>KIDNEY TRANSPLANT</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BACK PAIN</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Infertility </h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>IVF (In Vitro Fertilization)</h1>
-                <h1 className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Speech Therapy</h1>
-              </div>
-              <div className=' '>
-                <div className=' uppercase  mb-4 font-semibold text-orange-500'>MICE</div>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>MEETINGS</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>INCENTIVES</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CONFERENCES</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>EXHIBITIONS</h1>
-              </div>
-              <div className=' '>
-                <div className=' uppercase  mb-4 font-semibold text-orange-500'>Adventure N’ Leisure Activities </div>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRUMMING</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYBOARDING</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRAGON BOATING</h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GROUP CANOE </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GOLF </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEA KAYAKING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIRT BIKING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>OFF ROAD DRIVING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SWIM WITH DOLPHINS </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>RALLY CAR DRIVING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>QUAD BIKE RIDING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIVE WITH SHARKS </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEGWAY TOURS </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SKY DIVING </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>PAINTBALL </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BUNGEE JUMPING  </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYING FOX </h1>
-                <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CLAY PIGEON SHOOTING </h1>
-              </div>
-              <div className=' '>
-              <h1 className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>gala dining </h1>
-
-              </div>
-              
+            <div>
+              <div className=' uppercase  mb-4 font-semibold text-orange-500'>medical tourism</div>
+              <h1 onClick={() => navigate('/kerala')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>kerala</h1>
+              <h1 onClick={() => navigate('/bangalore')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>banglore</h1>
+              <h1 onClick={() => navigate('/mumbai')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>mumbai</h1>
+              <h1 onClick={() => navigate('/delhi')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>new delhi</h1>
+              <h1 onClick={() => navigate('/vellore')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>vellore</h1>
+              <h1 onClick={() => navigate('/jaipure')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>jaipur</h1>
             </div>
+            <div className=' '>
+              <div className=' uppercase  mb-4 font-semibold text-orange-500'>TREATMENTS</div>
+              <h1 onClick={() => navigate('/ayurveda')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>AYURVEDA</h1>
+              <h1 onClick={() => navigate('/allopathy')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ALLOPATHIC</h1>
+              <h1 onClick={() => navigate('/homeo')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HOMEOPATHIC</h1>
+              <h1 onClick={() => navigate('/unani')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>UNANI</h1>
+              <h1 onClick={() => navigate('/accu')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>ACUPUNCTURE</h1>
+              <h1 onClick={() => navigate('/nature')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>NATUROPATHY</h1>
+              <h1 onClick={() => navigate('/fragrant')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Fragrant healing</h1>
+              <h1 onClick={() => navigate('/contemplation')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Contemplation</h1>
+              <h1 onClick={() => navigate('/weight')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Weight reduction</h1>
+              <h1 onClick={() => navigate('/cri')} className=' flex gap-5 uppercase cursor-pointer hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CHIROPRACTIC TREATMEN</h1>
+            </div>
+            <div className=' '>
+              <div className=' uppercase  mb-4 font-semibold text-orange-500'>CLINICAL SPECIALITIES</div>
+              <h1 onClick={() => navigate('/maligant')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Malignant growth CARE</h1>
+              <h1 onClick={() => navigate('/heart')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>HEART CARE</h1>
+              <h1 onClick={() => navigate('/dental')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Dental Care</h1>
+              <h1 onClick={() => navigate('/skin')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Healthy skin</h1>
+              <h1 onClick={() => navigate('/joint')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>JOINT CARE</h1>
+              <h1 onClick={() => navigate('/diabetes')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIABETES CARE</h1>
+              <h1 onClick={() => navigate('/liver')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>LIVER TRANSPLANT</h1>
+              <h1 onClick={() => navigate('/kidney')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>KIDNEY TRANSPLANT</h1>
+              <h1 onClick={() => navigate('/backpain')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BACK PAIN</h1>
+              <h1 onClick={() => navigate('/infe')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Infertility </h1>
+              <h1 onClick={() => navigate('/ivf')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>IVF (In Vitro Fertilization)</h1>
+              <h1 onClick={() => navigate('/speech')} className=' flex gap-5 cursor-pointer uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>Speech Therapy</h1>
+            </div>
+            <div className=' '>
+              <div className=' uppercase  mb-4 font-semibold text-orange-500'>MICE</div>
+              <h1 onClick={() => navigate('/meetings')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>MEETINGS</h1>
+              <h1 onClick={() => navigate('/incentives')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>INCENTIVES</h1>
+              <h1 onClick={() => navigate('/conference')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CONFERENCES</h1>
+              <h1 onClick={() => navigate('/exhibitions')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>EXHIBITIONS</h1>
+            </div>
+            <div className=' '>
+              <div className=' uppercase  mb-4 font-semibold text-orange-500'>Adventure N’ Leisure Activities </div>
+              <h1 onClick={()=>navigate('/drumming')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRUMMING</h1>
+              <h1 onClick={()=>navigate('/flyboard')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYBOARDING</h1>
+              <h1 onClick={()=>navigate('/dragon')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DRAGON BOATING</h1>
+              <h1 onClick={()=>navigate('/group')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GROUP CANOE </h1>
+              <h1 onClick={()=>navigate('/golf')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>GOLF </h1>
+              <h1 onClick={()=>navigate('/sea')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEA KAYAKING </h1>
+              <h1 onClick={()=>navigate('/dirt')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIRT BIKING </h1>
+              <h1 onClick={()=>navigate('/off')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>OFF ROAD DRIVING </h1>
+              <h1 onClick={()=>navigate('/swim')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SWIM WITH DOLPHINS </h1>
+              <h1 onClick={()=>navigate('/rally')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>RALLY CAR DRIVING </h1>
+              <h1 onClick={()=>navigate('/quad')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>QUAD BIKE RIDING </h1>
+              <h1 onClick={()=>navigate('/dive')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>DIVE WITH SHARKS </h1>
+              <h1 onClick={()=>navigate('/sea')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SEGWAY TOURS </h1>
+              <h1 onClick={()=>navigate('/sky')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>SKY DIVING </h1>
+              <h1 onClick={()=>navigate('/paint')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>PAINTBALL </h1>
+              <h1 onClick={()=>navigate('/bungee')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>BUNGEE JUMPING  </h1>
+              <h1 onClick={()=>navigate('/flying')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>FLYING FOX </h1>
+              <h1 onClick={()=>navigate('/clay')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>CLAY PIGEON SHOOTING </h1>
+            </div>
+            <div className=' '>
+              <h1 onClick={()=>navigate('/gala')} className=' flex gap-5 uppercase hover:underline hover:text-blue-800 hover:font-semibold'><span className=' mt-1'><AiOutlineCaretRight /></span>gala dining </h1>
+
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
