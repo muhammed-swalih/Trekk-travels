@@ -32,7 +32,7 @@ function Ads() {
                     )
                     return (
 
-                        <div className='  w-[800px] h-60 rounded-3xl bg-black mx-auto'>
+                        <div className='  w-[800px] h-60 rounded-3xl  mx-auto py-2'>
                             <img className=' w-full h-full object-cover rounded-3xl' src={`data:image/jpeg;base64,${base64String}`} alt="" />
                         </div>
                     )
@@ -71,7 +71,7 @@ function Ads() {
                     String.fromCharCode(...new Uint32Array((items.image.data.data)))
                 )
                 return (
-                    <div className=' w-full h-36 rounded-lg bg-slate-600'>
+                    <div className=' w-full h-36 rounded-lg bg-slate-600 my-2'>
                         <img className='rounded-lg w-full h-full object-cover' src={`data:image/jpeg;base64,${base64String}`} alt="" />
                     </div>
                 )
