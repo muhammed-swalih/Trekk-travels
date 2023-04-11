@@ -20,7 +20,7 @@ function CalicutResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkandtravel.onrender.com/packages/calicut');
+        const response = await axios.get('https://trekkbackend.fun/packages/calicut');
         setResort(response.data)
         console.log(response.data);
     }

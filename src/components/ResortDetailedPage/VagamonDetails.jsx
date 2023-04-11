@@ -14,7 +14,7 @@ function VagamonDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekkandtravel.onrender.com/packages/getvagamon/${id}`)
+        axios(`https://trekkbackend.fun/packages/getvagamon/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

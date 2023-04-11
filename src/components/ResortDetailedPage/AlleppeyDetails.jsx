@@ -14,7 +14,7 @@ function AlleppeyDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekkandtravel.onrender.com/packages/getalleppey/${id}`)
+        axios(`https://trekkbackend.fun/packages/getalleppey/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

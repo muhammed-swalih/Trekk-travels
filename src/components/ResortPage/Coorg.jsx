@@ -20,7 +20,7 @@ function CoorgResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkandtravel.onrender.com/packages/coorg');
+        const response = await axios.get('https://trekkbackend.fun/packages/coorg');
         setResort(response.data)
         console.log(response.data);
     }

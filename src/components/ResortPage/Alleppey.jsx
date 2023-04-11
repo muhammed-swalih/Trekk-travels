@@ -20,7 +20,7 @@ function AlleppeyResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkandtravel.onrender.com/packages/alleppey');
+        const response = await axios.get('https://trekkbackend.fun/packages/alleppey');
         setResort(response.data)
         console.log(response.data);
     }

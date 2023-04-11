@@ -20,7 +20,7 @@ function KumarakomResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkandtravel.onrender.com/packages/kumarakom');
+        const response = await axios.get('https://trekkbackend.fun/packages/kumarakom');
         setResort(response.data)
         console.log(response.data);
     }

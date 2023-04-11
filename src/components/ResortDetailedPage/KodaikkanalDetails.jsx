@@ -14,7 +14,7 @@ function KodaikkanalDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekkandtravel.onrender.com/packages/getkodaikkanal/${id}`)
+        axios(`https://trekkbackend.fun/packages/getkodaikkanal/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

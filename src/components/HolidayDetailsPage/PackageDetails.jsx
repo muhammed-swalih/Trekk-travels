@@ -12,7 +12,7 @@ function PackageDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekkandtravel.onrender.com/packages/getholiday/${id}`)
+        axios(`https://trekkbackend.fun/packages/getholiday/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

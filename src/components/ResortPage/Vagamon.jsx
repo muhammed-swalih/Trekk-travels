@@ -20,7 +20,7 @@ function VagamonResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkandtravel.onrender.com/packages/vagamon');
+        const response = await axios.get('https://trekkbackend.fun/packages/vagamon');
         setResort(response.data)
         console.log(response.data);
     }

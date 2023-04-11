@@ -9,7 +9,7 @@ function BestHoneymoon() {
     const navigate = useNavigate()
     const [image, setImage] = useState([])
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkandtravel.onrender.com/packages/honeymoon');
+        const response = await axios.get('https://trekkbackend.fun/packages/honeymoon');
         setImage(response.data)
         console.log(response.data);
     }
@@ -18,11 +18,11 @@ function BestHoneymoon() {
     }
 
     const handleNextImage = ()=>{
-        document.getElementById('honeymoonPackage').scrollLeft-=1500
+        document.getElementById('honeymoonPackage').scrollLeft-=500
     }
 
     const handlePrevImage = ()=>{
-        document.getElementById('honeymoonPackage').scrollLeft+=1500
+        document.getElementById('honeymoonPackage').scrollLeft+=500
     }
     useEffect(() => {
         fetchHoneyMoonPackage();

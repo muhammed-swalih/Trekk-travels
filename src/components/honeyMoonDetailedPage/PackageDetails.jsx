@@ -12,7 +12,7 @@ function PackageDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekkandtravel.onrender.com/packages/gethoneymoon/${id}`)
+        axios(`https://trekkbackend.fun/packages/gethoneymoon/${id}`)
             .then(response => {
                 setDetails(response.data)
                 console.log(details);

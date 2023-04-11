@@ -13,7 +13,7 @@ function PackageList() {
     const isMediumScreen = useMediaQuery('(min-width : 1024px)')
     const [image, setImage] = useState([])
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkandtravel.onrender.com/packages/family');
+        const response = await axios.get('https://trekkbackend.fun/packages/family');
         setImage(response.data)
         console.log(response.data);
     }

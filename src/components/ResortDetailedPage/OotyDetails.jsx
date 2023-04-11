@@ -14,7 +14,7 @@ function OotyDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekkandtravel.onrender.com/packages/getooty/${id}`)
+        axios(`https://trekkbackend.fun/packages/getooty/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

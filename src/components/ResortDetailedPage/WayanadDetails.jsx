@@ -14,7 +14,7 @@ function WayanadDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekkandtravel.onrender.com/packages/getwayanad/${id}`)
+        axios(`https://trekkbackend.fun/packages/getwayanad/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

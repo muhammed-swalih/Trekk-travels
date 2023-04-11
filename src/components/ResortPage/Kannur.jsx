@@ -20,7 +20,7 @@ function KannurResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkandtravel.onrender.com/packages/kannur');
+        const response = await axios.get('https://trekkbackend.fun/packages/kannur');
         setResort(response.data)
         console.log(response.data);
     }

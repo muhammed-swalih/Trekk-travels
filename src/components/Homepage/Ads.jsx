@@ -12,7 +12,7 @@ function Ads() {
 
     const [image, setImage] = useState([])
     const fetchAds = async () => {
-        const response = await axios.get('https://trekkandtravel.onrender.com/packages/getAd');
+        const response = await axios.get('https://trekkbackend.fun/packages/getAd');
         setImage(response.data)
     }
     useEffect(() => {

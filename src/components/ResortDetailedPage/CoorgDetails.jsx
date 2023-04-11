@@ -14,7 +14,7 @@ function CoorgDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekkandtravel.onrender.com/packages/getcoorg/${id}`)
+        axios(`https://trekkbackend.fun/packages/getcoorg/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

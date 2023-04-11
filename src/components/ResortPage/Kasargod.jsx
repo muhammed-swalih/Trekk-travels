@@ -20,7 +20,7 @@ function KasargodResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkandtravel.onrender.com/packages/kasargod');
+        const response = await axios.get('https://trekkbackend.fun/packages/kasargod');
         setResort(response.data)
         console.log(response.data);
     }

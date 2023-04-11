@@ -20,7 +20,7 @@ function TrivandrumResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkandtravel.onrender.com/packages/trivandrum');
+        const response = await axios.get('https://trekkbackend.fun/packages/trivandrum');
         setResort(response.data)
         console.log(response.data);
     }

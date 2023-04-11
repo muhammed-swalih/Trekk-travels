@@ -14,7 +14,7 @@ function MunnarDetails() {
   const [base, setBase] = useState()
   const getDetails = () => {
 
-    axios(`https://trekkandtravel.onrender.com/packages/getmunnar/${id}`)
+    axios(`https://trekkbackend.fun/packages/getmunnar/${id}`)
       .then(response => {
         setDetails(response.data)
         const base64String = btoa(
