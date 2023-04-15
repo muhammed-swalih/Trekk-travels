@@ -79,6 +79,7 @@ import Bungee from './components/contents/adventure/Bungee';
 import Flying from './components/contents/adventure/Flying';
 import Clay from './components/contents/adventure/Clay';
 import Gala from './components/contents/gala/Gala';
+import DataProvider from './DataProvider';
 
 function App() {
   return (

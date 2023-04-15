@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import testImage from '../../TREKK TRAVEL ASSETSS/HOME PAGE/IMAGES/maldives.webp'
 import { useMediaQuery } from '@react-hook/media-query'
 import { AiOutlineCaretLeft, AiOutlineCaretRight, AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import DataContext from '../../DataContext'
 function AlleppeyResorts() {
     const navigate = useNavigate()
     const navigateResort = (id) => {
@@ -19,14 +20,12 @@ function AlleppeyResorts() {
         document.getElementById('alleppey').scrollLeft += 500
     }
 
-    const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkbackend.fun/packages/alleppey');
-        setResort(response.data)
-        console.log(response.data);
-    }
+
+
+    const {alp}  = useContext(DataContext)
 
     useEffect(() => {
-        fetchHoneyMoonPackage();
+        // fetchHoneyMoonPackage();
     }, [])
     const isMediumScreen = useMediaQuery('(min-width : 1024px)')
     const isTablet = useMediaQuery('(min-width : 640px)and(max-width: 1024px)');
@@ -44,7 +43,7 @@ function AlleppeyResorts() {
                     </div>
                 </div>
                 <div id='alleppey' className='relative scroll-smooth flex gap-3 overflow-scroll hide-scrollbar rounded-2xl mt-5'>
-                    {resort.map((items) => {
+                    {alp.map((items) => {
                         const base64String = btoa(
                             String.fromCharCode(...new Uint32Array((items.image.data.data)))
                         )
@@ -72,7 +71,7 @@ function AlleppeyResorts() {
                     <h1 className=' text-xl font-bold flex inline-flex gap-1'>Best Alleppey Resorts <span><img src='' alt="" width={30} /></span></h1>
                     <div className='  flex overflow-scroll py-5 gap-3 relative hide-scrollbar'>
 
-                        {resort.map((items) => {
+                        {alp.map((items) => {
                             const base64String = btoa(
                                 String.fromCharCode(...new Uint32Array((items.image.data.data)))
                             )

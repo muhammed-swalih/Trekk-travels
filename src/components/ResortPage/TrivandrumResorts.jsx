@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import testImage from '../../TREKK TRAVEL ASSETSS/HOME PAGE/IMAGES/maldives.webp'
 import { useMediaQuery } from '@react-hook/media-query'
 import { AiOutlineCaretLeft, AiOutlineCaretRight, AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import DataContext from '../../DataContext'
 function TrivandrumResorts() {
     const navigate = useNavigate()
     const navigateTrivandrumResort = (id) => {
         navigate(`/trivandrumresort/${id}`)
     }
-
+    // const data = useContext(DataContext)
+    const {data}  =useContext(DataContext)
     const [resort, setResort] = useState([])
     const handleNextImage = () => {
         document.getElementById('trivandrum').scrollLeft -= 500
@@ -19,14 +21,10 @@ function TrivandrumResorts() {
         document.getElementById('trivandrum').scrollLeft += 500
     }
 
-    const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkbackend.fun/packages/trivandrum');
-        setResort(response.data)
-        console.log(response.data);
-    }
 
     useEffect(() => {
-        fetchHoneyMoonPackage();
+        // fetchHoneyMoonPackage();
+        console.log(data);
     }, [])
     const isMediumScreen = useMediaQuery('(min-width : 1024px)')
     const isTablet = useMediaQuery('(min-width : 640px)and(max-width: 1024px)');
@@ -44,7 +42,7 @@ function TrivandrumResorts() {
                         </div>
                     </div>
                     <div id='trivandrum' className='relative scroll-smooth flex gap-3 overflow-scroll hide-scrollbar rounded-2xl mt-5'>
-                        {resort.map((items) => {
+                        {data.map((items) => {
                             const base64String = btoa(
                                 String.fromCharCode(...new Uint32Array((items.image.data.data)))
                             )
@@ -72,7 +70,7 @@ function TrivandrumResorts() {
                     <h1 className=' text-xl font-bold flex inline-flex gap-1'>Best Trivandrum Resorts <span><img src='' alt="" width={30} /></span></h1>
                     <div className='  flex overflow-scroll py-5 gap-3 relative hide-scrollbar'>
 
-                        {resort.map((items) => {
+                        {data.map((items) => {
                             const base64String = btoa(
                                 String.fromCharCode(...new Uint32Array((items.image.data.data)))
                             )

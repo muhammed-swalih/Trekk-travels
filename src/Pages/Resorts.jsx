@@ -17,6 +17,7 @@ import Thrissur from '../components/ResortPage/Thrissur'
 import TrivandrumResorts from '../components/ResortPage/TrivandrumResorts'
 import Vagamon from '../components/ResortPage/Vagamon'
 import Wayanad from '../components/ResortPage/Wayanad'
+import DataProvider from '../DataProvider'
 function Resorts() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -24,9 +25,9 @@ function Resorts() {
   return (
     <div>
       <Navbar />
-      <TrivandrumResorts />
-      <Kumarakom />
-      <Alleppey />
+     <DataProvider><TrivandrumResorts /></DataProvider>
+      <DataProvider><Kumarakom /></DataProvider>
+      <DataProvider><Alleppey /></DataProvider>
       <Munnar />
       <Vagamon />
       <Thekkady />

@@ -1,15 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import testImage from '../../TREKK TRAVEL ASSETSS/HOME PAGE/IMAGES/maldives.webp'
 import { useMediaQuery } from '@react-hook/media-query'
 import { AiOutlineCaretLeft, AiOutlineCaretRight, AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import DataContext from '../../DataContext'
 function KumarakomResorts() {
     const navigate = useNavigate()
     const navigateResort = (id) => {
         navigate(`/kumarakomresort/${id}`)
     }
-
+    const {kumr} = useContext(DataContext)
     const [resort, setResort] = useState([])
     const handleNextImage = () => {
         document.getElementById('kumarakom').scrollLeft -= 500
@@ -19,15 +20,8 @@ function KumarakomResorts() {
         document.getElementById('kumarakom').scrollLeft += 500
     }
 
-    const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekkbackend.fun/packages/kumarakom');
-        setResort(response.data)
-        console.log(response.data);
-    }
 
-    useEffect(() => {
-        fetchHoneyMoonPackage();
-    }, [])
+
     const isMediumScreen = useMediaQuery('(min-width : 1024px)')
     const isTablet = useMediaQuery('(min-width : 640px)and(max-width: 1024px)');
 
@@ -44,7 +38,7 @@ function KumarakomResorts() {
                         </div>
                     </div>
                     <div id='kumarakom' className='relative scroll-smooth flex gap-3 overflow-scroll hide-scrollbar rounded-2xl mt-5'>
-                        {resort.map((items) => {
+                        {kumr.map((items) => {
                             const base64String = btoa(
                                 String.fromCharCode(...new Uint32Array((items.image.data.data)))
                             )
@@ -72,7 +66,7 @@ function KumarakomResorts() {
                     <h1 className=' text-xl font-bold flex inline-flex gap-1'>Best Kumarakom Resorts <span><img src='' alt="" width={30} /></span></h1>
                     <div className='  flex overflow-scroll py-5 gap-3 relative hide-scrollbar'>
 
-                        {resort.map((items) => {
+                        {kumr.map((items) => {
                             const base64String = btoa(
                                 String.fromCharCode(...new Uint32Array((items.image.data.data)))
                             )
